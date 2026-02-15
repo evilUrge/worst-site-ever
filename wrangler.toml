@@ -1,0 +1,19 @@
+name = "worst-site-ever"
+compatibility_date = "2024-01-01"
+
+# Cloudflare Pages configuration for Next.js static export
+pages_build_output_dir = "out"
+
+[build]
+command = "npm run build"
+
+# Note: Custom domain will be configured in Cloudflare Pages dashboard
+# Recommended subdomain: legendary.maoz.dev
+# Alternative options: premium.maoz.dev, certified.maoz.dev, 1999.maoz.dev
+
+# Environment configuration
+[env.production]
+# Add production-specific settings here if needed
+
+[env.preview]
+# Preview deployments configuration
