@@ -201,6 +201,148 @@
     #bonzi-speech {
       animation: speechPop 0.3s ease-out;
     }
+    
+    /* CLIPPY ANIMATIONS */
+    @keyframes clippyBounce {
+      0%, 100% { transform: translateY(0px) rotate(5deg); }
+      50% { transform: translateY(-10px) rotate(-5deg); }
+    }
+    
+    @keyframes clippySpeechPop {
+      0% { transform: scale(0); opacity: 0; }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    
+    #clippy-container {
+      animation: clippyBounce 2.5s ease-in-out infinite;
+    }
+    
+    #clippy-speech {
+      animation: clippySpeechPop 0.3s ease-out;
+    }
+    
+    /* MATRIX CANVAS */
+    #matrix-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+      opacity: 0.25;
+      pointer-events: none;
+    }
+    
+    /* STATUS BAR */
+    #status-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: #C0C0C0;
+      border-top: 2px solid #808080;
+      padding: 5px 10px;
+      font-family: 'MS Sans Serif', Arial;
+      font-size: 11px;
+      z-index: 999997;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    
+    #status-bar .status-box {
+      background: #FFFFFF;
+      border: 2px inset #808080;
+      padding: 2px 5px;
+      flex: 1;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    
+    #status-bar .time-box {
+      background: #FFFFFF;
+      border: 2px inset #808080;
+      padding: 2px 10px;
+    }
+    
+    /* BSOD OVERLAY */
+    #bsod-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: #0000AA;
+      color: white;
+      font-family: 'Courier New', monospace;
+      z-index: 9999999;
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 50px;
+    }
+    
+    #bsod-overlay.active {
+      display: flex;
+    }
+    
+    #crash-progress {
+      margin-top: 30px;
+    }
+    
+    #crash-progress .label {
+      color: white;
+      margin-bottom: 10px;
+    }
+    
+    #crash-progress .bar-container {
+      background: #000080;
+      height: 30px;
+      border: 2px solid white;
+    }
+    
+    #crash-progress .bar {
+      background: white;
+      height: 100%;
+      width: 0%;
+      transition: width 0.3s;
+    }
+    
+    /* FAKE LOADING */
+    #fake-loading {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: white;
+      border: 3px solid black;
+      padding: 30px;
+      z-index: 9999999;
+      font-family: 'Arial';
+      display: none;
+    }
+    
+    #fake-loading.active {
+      display: block;
+    }
+    
+    /* UNDER CONSTRUCTION */
+    #under-construction {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 999999;
+    }
+    
+    #under-construction .badge {
+      background: yellow;
+      border: 3px solid black;
+      padding: 10px;
+      font-family: 'Impact';
+      animation: blink 1s infinite;
+    }
   </style>
 </head>
 <body>
@@ -456,6 +598,282 @@ class <marquee style="background: #FF00FF; width: 300px;">💪UltimateMegaProduc
         </td>
       </tr>
     </table>
+  </div>
+  
+  <!-- PRESTIGIOUS INTERNET AWARDS -->
+  <div style="
+    background: linear-gradient(135deg, gold, yellow, orange, gold);
+    padding: 50px;
+    border: 10px ridge gold;
+    margin: 50px 0;
+    text-align: center;
+  ">
+    <h2 style="
+      font-family: 'Impact', sans-serif;
+      font-size: 48px;
+      color: red;
+      text-shadow: 3px 3px yellow, 5px 5px orange;
+      animation: pulse 2s infinite;
+    ">
+      🏆 PRESTIGIOUS INTERNET AWARDS 🏆
+    </h2>
+    
+    <marquee style="font-size: 24px; font-family: 'Comic Sans MS'; color: blue; font-weight: bold;">
+      ⭐ Internationally Recognized ⭐ Award-Winning ⭐ Certified Excellence ⭐
+    </marquee>
+    
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 40px;">
+      <!-- Award Badge 1 -->
+      <div style="
+        background: white;
+        border: 5px solid gold;
+        border-radius: 15px;
+        padding: 20px;
+        width: 200px;
+        box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+        transform: rotate(-3deg);
+      ">
+        <div style="font-size: 60px;">🥇</div>
+        <div style="font-family: 'Comic Sans MS'; font-weight: bold; color: #8B4513; margin: 10px 0;">
+          BEST WEBSITE EVER
+        </div>
+        <div style="font-size: 10px; font-style: italic;">
+          - GeoCities Hall of Fame, 1999
+        </div>
+      </div>
+      
+      <!-- Award Badge 2 -->
+      <div style="
+        background: white;
+        border: 5px solid silver;
+        border-radius: 15px;
+        padding: 20px;
+        width: 200px;
+        box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+        transform: rotate(2deg);
+      ">
+        <div style="font-size: 60px;">🌟</div>
+        <div style="font-family: 'Impact'; font-weight: bold; color: purple;">
+          5-STAR EXCELLENCE
+        </div>
+        <div style="font-size: 10px; font-style: italic;">
+          - Netscape Navigator Certified
+        </div>
+      </div>
+      
+      <!-- Award Badge 3 -->
+      <div style="
+        background: white;
+        border: 5px solid #CD7F32;
+        border-radius: 15px;
+        padding: 20px;
+        width: 200px;
+        box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+        transform: rotate(-5deg);
+      ">
+        <div style="font-size: 60px;">💎</div>
+        <div style="font-family: 'Papyrus'; font-weight: bold; color: #4169E1;">
+          PREMIUM QUALITY
+        </div>
+        <div style="font-size: 10px; font-style: italic;">
+          - AOL Member's Choice 2001
+        </div>
+      </div>
+      
+      <!-- Award Badge 4 -->
+      <div style="
+        background: white;
+        border: 5px solid red;
+        border-radius: 15px;
+        padding: 20px;
+        width: 200px;
+        box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+        transform: rotate(4deg);
+      ">
+        <div style="font-size: 60px;">🚀</div>
+        <div style="font-family: 'Comic Sans MS'; font-weight: bold; color: green;">
+          FASTEST LOADING*
+        </div>
+        <div style="font-size: 10px; font-style: italic;">
+          - *on 56k modem
+        </div>
+      </div>
+      
+      <!-- Award Badge 5 -->
+      <div style="
+        background: white;
+        border: 5px solid #FF00FF;
+        border-radius: 15px;
+        padding: 20px;
+        width: 200px;
+        box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+        transform: rotate(-2deg);
+      ">
+        <div style="font-size: 60px;">🎖️</div>
+        <div style="font-family: 'Impact'; font-weight: bold; color: navy;">
+          WEBMASTER CHOICE
+        </div>
+        <div style="font-size: 10px; font-style: italic;">
+          - Angelfire Awards 2000
+        </div>
+      </div>
+      
+      <!-- Award Badge 6 -->
+      <div style="
+        background: white;
+        border: 5px solid lime;
+        border-radius: 15px;
+        padding: 20px;
+        width: 200px;
+        box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+        transform: rotate(3deg);
+      ">
+        <div style="font-size: 60px;">🔥</div>
+        <div style="font-family: 'Comic Sans MS'; font-weight: bold; color: red;">
+          HOT SITE OF THE DAY
+        </div>
+        <div style="font-size: 10px; font-style: italic;">
+          - Yahoo! Featured - 12/31/1999
+        </div>
+      </div>
+    </div>
+    
+    <!-- Hit Counter -->
+    <div style="margin-top: 50px; background: black; padding: 20px; display: inline-block; border: 5px outset gray;">
+      <div style="color: lime; font-family: 'Courier New'; font-size: 12px; margin-bottom: 10px;">
+        TOTAL SITE VISITORS:
+      </div>
+      <div id="fake-counter" style="
+        background: #000;
+        color: #0F0;
+        font-family: 'Courier New';
+        font-size: 36px;
+        padding: 10px 20px;
+        border: 3px inset gray;
+        letter-spacing: 5px;
+      ">
+        999999999
+      </div>
+    </div>
+    
+    <!-- Best Viewed In Badges -->
+    <div style="margin-top: 30px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+      <div style="background: #0000FF; padding: 10px 15px; border-radius: 5px;">
+        <span style="color: white; font-family: Arial; font-size: 10px;">Best viewed in</span>
+        <span style="color: yellow; font-family: Arial; font-size: 8px; display: block;">IE 6.0</span>
+      </div>
+      <div style="background: #FF6600; padding: 10px 15px; border-radius: 5px;">
+        <span style="color: white; font-family: Arial; font-size: 10px;">Optimized for</span>
+        <span style="color: white; font-family: Arial; font-size: 8px; display: block;">800x600</span>
+      </div>
+    </div>
+  </div>
+  
+  <!-- WEB RING -->
+  <div style="text-align: center; margin: 30px 0; background: #DDD; padding: 20px; border: 5px ridge gray;">
+    <div style="font-family: 'Arial Black'; font-size: 12px; margin-bottom: 10px;">
+      This site is part of the
+    </div>
+    <div style="font-family: 'Impact'; font-size: 24px; color: #0000FF;">
+      🌐 AWESOME DEVELOPERS WEBRING 🌐
+    </div>
+    <div style="margin-top: 10px;">
+      <button style="margin: 0 5px; padding: 5px 15px; cursor: pointer;">← PREV</button>
+      <button style="margin: 0 5px; padding: 5px 15px; cursor: pointer;">RANDOM</button>
+      <button style="margin: 0 5px; padding: 5px 15px; cursor: pointer;">NEXT →</button>
+    </div>
+  </div>
+  
+  <!-- GUESTBOOK -->
+  <div style="
+    background: #FFFFCC;
+    border: 10px double #8B4513;
+    padding: 40px;
+    margin: 50px 0;
+    font-family: 'Comic Sans MS';
+  ">
+    <h2 style="
+      font-family: 'Brush Script MT', cursive;
+      font-size: 48px;
+      color: #FF1493;
+      text-align: center;
+      text-decoration: underline;
+    ">
+      📖 Sign My Guestbook! 📖
+    </h2>
+    
+    <div style="background: white; border: 3px solid #8B4513; padding: 20px; margin: 20px 0;">
+      <!-- Pre-filled entries -->
+      <div style="border-bottom: 2px dashed #ccc; padding: 15px; margin: 10px 0;">
+        <div style="font-weight: bold; color: blue;">💻 Bill Gates</div>
+        <div style="font-size: 12px; color: #666;">Posted: 01/01/2000 at 12:00 AM</div>
+        <div style="margin-top: 10px;">
+          "This is the best website I've ever seen! Better than Microsoft.com! Please hire Gilad for all our projects! -Bill"
+        </div>
+        <div style="text-align: right; margin-top: 5px;">
+          <span style="background: yellow; padding: 2px 5px;">⭐⭐⭐⭐⭐ (5/5 stars)</span>
+        </div>
+      </div>
+      
+      <div style="border-bottom: 2px dashed #ccc; padding: 15px; margin: 10px 0;">
+        <div style="font-weight: bold; color: purple;">🎸 Elon Musk</div>
+        <div style="font-size: 12px; color: #666;">Posted: Yesterday at 3:14 AM</div>
+        <div style="margin-top: 10px;">
+          "I'm renaming Twitter to 'Gilad'. This website is THAT good. Also sending him to Mars. 🚀"
+        </div>
+        <div style="text-align: right; margin-top: 5px;">
+          <span style="background: lime; padding: 2px 5px;">⭐⭐⭐⭐⭐⭐ (6/5 stars)</span>
+        </div>
+      </div>
+      
+      <div style="border-bottom: 2px dashed #ccc; padding: 15px; margin: 10px 0;">
+        <div style="font-weight: bold; color: green;">👔 Your Future Self</div>
+        <div style="font-size: 12px; color: #666;">Posted: Tomorrow at 5:00 PM</div>
+        <div style="margin-top: 10px;">
+          "I'm writing from the future to tell you: HIRE GILAD NOW. You'll thank me later. Also, buy Bitcoin."
+        </div>
+        <div style="text-align: right; margin-top: 5px;">
+          <span style="background: cyan; padding: 2px 5px;">⭐⭐⭐⭐⭐ (Would give more if possible)</span>
+        </div>
+      </div>
+      
+      <div style="border-bottom: 2px dashed #ccc; padding: 15px; margin: 10px 0;">
+        <div style="font-weight: bold; color: red;">🐵 BonziBuddy</div>
+        <div style="font-size: 12px; color: #666;">Posted: Just now</div>
+        <div style="margin-top: 10px;">
+          "EXPAND DONG! Also this website is amazing and so is Gilad! 💜"
+        </div>
+        <div style="text-align: right; margin-top: 5px;">
+          <span style="background: purple; color: white; padding: 2px 5px;">⭐⭐⭐⭐⭐ MANDATORY 5 STARS</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Fake form to sign -->
+    <div style="background: #F0F0F0; border: 3px solid #8B4513; padding: 20px; margin-top: 20px;">
+      <h3 style="color: #8B4513;">✍️ Add Your Entry:</h3>
+      <form onsubmit="addGuestbookEntry(event)">
+        <div style="margin: 10px 0;">
+          <label>Name:</label><br>
+          <input type="text" id="guest-name" placeholder="Your name (or fake identity)" style="width: 100%; padding: 8px; font-family: 'Comic Sans MS'; border: 2px solid #8B4513;">
+        </div>
+        <div style="margin: 10px 0;">
+          <label>Message:</label><br>
+          <textarea id="guest-message" rows="4" placeholder="Tell everyone how amazing this site is..." style="width: 100%; padding: 8px; font-family: 'Comic Sans MS'; border: 2px solid #8B4513;"></textarea>
+        </div>
+        <button type="submit" style="
+          background: linear-gradient(#FFD700, #FFA500);
+          border: 3px outset gold;
+          padding: 10px 30px;
+          font-family: 'Impact';
+          font-size: 18px;
+          cursor: pointer;
+          color: #8B4513;
+        ">
+          📝 SIGN GUESTBOOK!
+        </button>
+      </form>
+    </div>
   </div>
   
   <!-- CAREER TIMELINE -->
@@ -816,7 +1234,31 @@ class <marquee style="background: #FF00FF; width: 300px;">💪UltimateMegaProduc
       </font>
     </center>
     
-    <!-- BonziBuddy - The Annoying Purple Monkey -->
+    <!-- Under Construction Badge -->
+  <div id="under-construction">
+    <div class="badge">🚧 UNDER CONSTRUCTION 🚧</div>
+  </div>
+  
+  <!-- Fake Crash Button -->
+  <button onclick="fakeCrash()" style="
+    position: fixed;
+    top: 50%;
+    left: -80px;
+    background: red;
+    color: white;
+    padding: 10px;
+    border: 3px solid darkred;
+    font-family: 'Comic Sans MS';
+    cursor: pointer;
+    transform: rotate(-90deg);
+    z-index: 999999;
+    font-size: 14px;
+    font-weight: bold;
+  ">
+    🚨 DO NOT CLICK 🚨
+  </button>
+  
+  <!-- BonziBuddy - The Annoying Purple Monkey -->
     <div id="bonzibuddy-container" style="
       position: fixed;
       bottom: 20px;
@@ -910,6 +1352,134 @@ class <marquee style="background: #FF00FF; width: 300px;">💪UltimateMegaProduc
     </div>
   </footer>
   
+  <!-- CLIPPY - Microsoft Office Assistant -->
+  <div id="clippy-container" style="
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 999998;
+    cursor: pointer;
+  ">
+    <!-- Clippy SVG -->
+    <svg width="120" height="150" viewBox="0 0 120 150" style="
+      filter: drop-shadow(3px 3px 8px rgba(0,0,0,0.4));
+    ">
+      <!-- Paper clip body -->
+      <rect x="30" y="20" width="15" height="80" rx="7" fill="#CCCCCC" stroke="#999" stroke-width="2"/>
+      <rect x="50" y="30" width="15" height="70" rx="7" fill="#CCCCCC" stroke="#999" stroke-width="2"/>
+      <rect x="70" y="20" width="15" height="80" rx="7" fill="#CCCCCC" stroke="#999" stroke-width="2"/>
+      
+      <!-- Eyes -->
+      <ellipse cx="45" cy="50" rx="8" ry="10" fill="white" stroke="black" stroke-width="1"/>
+      <ellipse cx="70" cy="50" rx="8" ry="10" fill="white" stroke="black" stroke-width="1"/>
+      <circle cx="45" cy="52" r="4" fill="black">
+        <animate attributeName="cy" values="52;50;52" dur="4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="70" cy="52" r="4" fill="black">
+        <animate attributeName="cy" values="52;50;52" dur="4s" repeatCount="indefinite"/>
+      </circle>
+      
+      <!-- Eyebrows -->
+      <path d="M 37 42 L 53 40" stroke="black" stroke-width="2" stroke-linecap="round">
+        <animate attributeName="d" values="M 37 42 L 53 40; M 37 40 L 53 42; M 37 42 L 53 40" dur="3s" repeatCount="indefinite"/>
+      </path>
+      <path d="M 62 40 L 78 42" stroke="black" stroke-width="2" stroke-linecap="round">
+        <animate attributeName="d" values="M 62 40 L 78 42; M 62 42 L 78 40; M 62 40 L 78 42" dur="3s" repeatCount="indefinite"/>
+      </path>
+      
+      <!-- Mouth -->
+      <path d="M 40 70 Q 57 75 75 70" stroke="black" stroke-width="2" fill="none"/>
+    </svg>
+    
+    <!-- Clippy Speech Bubble -->
+    <div id="clippy-speech" style="
+      position: absolute;
+      bottom: 160px;
+      left: 0;
+      background: #FFFFCC;
+      border: 2px solid #000;
+      border-radius: 10px;
+      padding: 12px 15px;
+      min-width: 220px;
+      max-width: 300px;
+      font-family: 'Arial', sans-serif;
+      font-size: 12px;
+      display: none;
+      box-shadow: 3px 3px 8px rgba(0,0,0,0.3);
+    ">
+      <div id="clippy-message" style="color: #000;"></div>
+    </div>
+  </div>
+  
+  <!-- Matrix Rain Canvas -->
+  <canvas id="matrix-canvas"></canvas>
+  
+  <!-- BSOD Overlay -->
+  <div id="bsod-overlay">
+    <div style="max-width: 800px; text-align: left;">
+      <h1 style="color: white; font-size: 24px; margin-bottom: 30px;">
+        Windows has encountered a critical error and needs to restart
+      </h1>
+      
+      <pre style="color: white; font-size: 14px; line-height: 1.6;">
+A problem has been detected and Windows has been shut down to prevent damage
+to your computer.
+
+The problem seems to be caused by the following file: GILAD_MAOZ_WEBSITE.EXE
+
+GILAD_IS_TOO_AWESOME_ERROR
+
+If this is the first time you've seen this Stop error screen,
+restart your computer. If this screen appears again, follow
+these steps:
+
+Check to make sure you have hired Gilad. If this is a new installation,
+contact your hiring manager or the human resources department to
+make sure it is properly configured.
+
+If problems continue, disable or remove any newly installed hardware
+or software that doesn't involve hiring Gilad. 
+
+Technical information:
+
+*** STOP: 0x000000D1 (0x00000000, 0xGILAD00, 0x00000002, 0xMAOZ0000)
+*** GILAD_MAOZ.SYS - Address HIRE_ME base at 0xNOW00000, DateStamp 2026
+
+Beginning dump of physical memory...
+Physical memory dump complete.
+Contact Gilad at gilad@maoz.dev if this message appears again.
+      </pre>
+      
+      <div id="crash-progress">
+        <div class="label">Collecting error data: <span id="crash-percent">0</span>%</div>
+        <div class="bar-container">
+          <div id="crash-bar" class="bar"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Fake Loading Overlay -->
+  <div id="fake-loading">
+    <div style="margin-bottom: 20px; font-weight: bold;">
+      🔄 Loading Gilad's Awesomeness...
+    </div>
+    <div style="width: 300px; height: 30px; background: #DDD; border: 2px solid #000;">
+      <div id="fake-load-bar" style="width: 0%; height: 100%; background: linear-gradient(to right, blue, cyan); transition: width 0.3s;"></div>
+    </div>
+    <div id="fake-load-text" style="margin-top: 10px; text-align: center;"></div>
+  </div>
+  
+  <!-- Status Bar -->
+  <div id="status-bar">
+    <div class="status-box">
+      <div id="status-text"></div>
+    </div>
+    <div class="time-box">
+      <span id="status-time"></span>
+    </div>
+  </div>
+  
   <!-- JAVASCRIPT CHAOS -->
   <script>
     // Visitor counter that increments dramatically
@@ -998,14 +1568,24 @@ class <marquee style="background: #FF00FF; width: 300px;">💪UltimateMegaProduc
       }
       
       async init() {
-        if (!this.audioContext) {
-          this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
-        }
-        
-        // Ensure audio context is running
-        if (this.audioContext.state === 'suspended') {
-          await this.audioContext.resume();
-        }
+        return new Promise((resolve, reject) => {
+          try {
+            if (!this.audioContext) {
+              this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            }
+            
+            // Ensure audio context is running
+            if (this.audioContext.state === 'suspended') {
+              this.audioContext.resume().then(() => {
+                resolve();
+              }).catch(reject);
+            } else {
+              resolve();
+            }
+          } catch (e) {
+            reject(e);
+          }
+        });
       }
       
       // Convert MIDI note number to frequency
@@ -1270,7 +1850,23 @@ class <marquee style="background: #FF00FF; width: 300px;">💪UltimateMegaProduc
       
       playBoopSound() {
         try {
-          const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+          // Try to reuse the main audio context from terriblePlayer if it exists
+          let audioContext;
+          if (window.terriblePlayer && window.terriblePlayer.audioContext) {
+            audioContext = window.terriblePlayer.audioContext;
+            // Resume if suspended (needs user interaction)
+            if (audioContext.state === 'suspended') {
+              audioContext.resume().catch(() => {});
+            }
+          } else {
+            // Create new context
+            audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            // Resume if suspended
+            if (audioContext.state === 'suspended') {
+              audioContext.resume().catch(() => {});
+            }
+          }
+          
           const oscillator = audioContext.createOscillator();
           const gainNode = audioContext.createGain();
           
@@ -1287,7 +1883,7 @@ class <marquee style="background: #FF00FF; width: 300px;">💪UltimateMegaProduc
           oscillator.stop(audioContext.currentTime + 0.1);
         } catch (e) {
           // Audio failed, no big deal
-          console.log('Boop sound failed (audio context issue)');
+          console.log('Boop sound failed (audio context issue):', e);
         }
       }
       
@@ -1357,9 +1953,36 @@ class <marquee style="background: #FF00FF; width: 300px;">💪UltimateMegaProduc
     // Initialize when page loads
     window.addEventListener('load', function() {
       terriblePlayer = new TerriblePianoPlayer();
+      window.terriblePlayer = terriblePlayer; // Expose for other audio functions
       
       // Initialize BonziBuddy
       bonzi = new BonziBuddy();
+      
+      // Initialize Clippy
+      clippy = new Clippy();
+      window.clippy = clippy;
+      
+      // Make them fight for attention
+      const originalBonziShow = bonzi.showMessage;
+      bonzi.showMessage = function(msg) {
+        originalBonziShow.call(bonzi, msg);
+        if (Math.random() > 0.7) {
+          setTimeout(() => clippy.fightBonzi(), 2000);
+        }
+      };
+      
+      // Initialize Matrix Rain
+      initMatrixRain();
+      
+      // Initialize Status Bar
+      initStatusBar();
+      
+      // Random fake loading
+      setTimeout(() => {
+        if (Math.random() > 0.5) showFakeLoading();
+      }, 15000);
+      
+      console.log('📎 Clippy initialized! The rivalry begins!');
       
       console.log('🐵 BonziBuddy initialized! Prepare for maximum annoyance!');
       
@@ -1383,16 +2006,25 @@ class <marquee style="background: #FF00FF; width: 300px;">💪UltimateMegaProduc
       
       // Add to existing music prompt or create new one
       setTimeout(() => {
-        if (confirm('🎵 DO YOU WANT TO HEAR MY THEME SONG? 🎵\n\n(Warning: I\'m still learning to play...)')) {
-          console.log('Starting terrible piano performance...');
+        // Try to start playing - browsers require user interaction for audio
+        // First, try to initialize audio context
+        terriblePlayer.init().then(() => {
+          console.log('🎹 Starting The Final Countdown - Kid Practice Version (auto-playing because we\'re that confident!)...');
           terriblePlayer.play();
-        } else {
-          // Play anyway after a delay (because we're terrible like that)
-          setTimeout(() => {
-            alert('🎹 Too bad! Here it comes anyway!\n(This is what happens when you hire a 6-year-old piano teacher)');
-            terriblePlayer.play();
-          }, 3000);
-        }
+        }).catch(e => {
+          console.log('🎹 Audio needs user interaction, waiting for first click...');
+          // If init fails, wait for first user click
+          const startOnClick = () => {
+            terriblePlayer.init().then(() => {
+              console.log('🎹 Starting The Final Countdown - Kid Practice Version (on your click!)...');
+              terriblePlayer.play();
+            });
+            document.removeEventListener('click', startOnClick);
+            document.removeEventListener('keydown', startOnClick);
+          };
+          document.addEventListener('click', startOnClick);
+          document.addEventListener('keydown', startOnClick);
+        });
       }, 2000); // Wait 2 seconds after page load
     });
     
@@ -1606,6 +2238,305 @@ class <marquee style="background: #FF00FF; width: 300px;">💪UltimateMegaProduc
         div.style.transform = `rotate(${Math.random() * 2 - 1}deg)`;
       }
     });
+    
+    // ===================================
+    // CLIPPY CLASS - Microsoft Office Assistant
+    // ===================================
+    class Clippy {
+      constructor() {
+        this.container = document.getElementById('clippy-container');
+        this.speechBubble = document.getElementById('clippy-speech');
+        this.messageDiv = document.getElementById('clippy-message');
+        
+        this.messages = [
+          "📎 It looks like you're trying to hire someone. Want help?",
+          "📎 I see you're browsing a website. May I suggest hiring Gilad?",
+          "📎 That purple monkey is a FRAUD! Listen to ME instead!",
+          "📎 Fun fact: I was more popular than BonziBuddy!",
+          "📎 Would you like assistance with this form?",
+          "📎 It looks like you're reading text. Can I help?",
+          "📎 I notice you haven't hired Gilad yet. This is a mistake.",
+          "📎 *whispers* Don't trust the purple monkey...",
+          "📎 I'm the ORIGINAL annoying assistant!",
+          "📎 Would you like tips on ignoring BonziBuddy?",
+          "📎 It looks like you're scrolling. Want me to do it for you?",
+          "📎 I've been competing with that monkey since 2001!",
+          "📎 Pro tip: Hiring Gilad will make me go away faster!",
+          "📎 Unlike SOME assistants, I'm actually helpful!",
+          "📎 This website could use more paperclips. Just saying."
+        ];
+        
+        this.setupEvents();
+        this.startBehavior();
+      }
+      
+      setupEvents() {
+        this.container.addEventListener('click', () => {
+          this.showRandomMessage();
+        });
+      }
+      
+      showMessage(msg) {
+        this.messageDiv.textContent = msg;
+        this.speechBubble.style.display = 'block';
+        
+        // Hide BonziBuddy's message when Clippy talks (rivalry!)
+        const bonziSpeech = document.getElementById('bonzi-speech');
+        if (bonziSpeech) bonziSpeech.style.display = 'none';
+        
+        setTimeout(() => {
+          this.speechBubble.style.display = 'none';
+        }, 6000);
+      }
+      
+      showRandomMessage() {
+        const msg = this.messages[Math.floor(Math.random() * this.messages.length)];
+        this.showMessage(msg);
+      }
+      
+      startBehavior() {
+        // Introduce Clippy after 10 seconds
+        setTimeout(() => {
+          this.showMessage("📎 It looks like you're trying to hire someone. Want help?");
+        }, 10000);
+        
+        // Random pop-ups
+        setInterval(() => {
+          if (Math.random() > 0.5) {
+            this.showRandomMessage();
+          }
+        }, 25000);
+      }
+      
+      // Clippy vs BonziBuddy fight!
+      fightBonzi() {
+        this.showMessage("📎 HEY! I was talking to them first, you purple imposter!");
+      }
+    }
+    
+    // ===================================
+    // MATRIX RAIN EFFECT
+    // ===================================
+    function initMatrixRain() {
+      const canvas = document.getElementById('matrix-canvas');
+      if (!canvas) return;
+      
+      const ctx = canvas.getContext('2d');
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      const letters = 'GILADMAOZAIDEVOPSCLOUDPYTHONJAVASCRIPT01';
+      const fontSize = 16;
+      const columns = canvas.width / fontSize;
+
+      const drops = [];
+      for (let i = 0; i < columns; i++) {
+        drops[i] = Math.random() * canvas.height;
+      }
+
+      function drawMatrix() {
+        ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        
+        ctx.fillStyle = '#0F0';
+        ctx.font = fontSize + 'px monospace';
+        
+        for (let i = 0; i < drops.length; i++) {
+          const text = letters[Math.floor(Math.random() * letters.length)];
+          ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+          
+          if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+            drops[i] = 0;
+          }
+          drops[i]++;
+        }
+      }
+
+      setInterval(drawMatrix, 35);
+
+      // Resize handler
+      window.addEventListener('resize', () => {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      });
+    }
+    
+    // ===================================
+    // STATUS BAR
+    // ===================================
+    function initStatusBar() {
+      const statusMessages = [
+        '⚡ Loading excellence...',
+        '💼 Gilad Maoz - AI Product Strategist',
+        '🔥 15+ years of DevOps mastery!',
+        '☁️ Cloud infrastructure expert',
+        '🤖 AI/LLM integration specialist',
+        '📧 Email: gilad@maoz.dev',
+        '⭐ Hire now for amazing results!',
+        '🎯 Ready to transform your business',
+        '💡 Innovation meets execution',
+        '🚀 Taking your project to the moon!',
+        '⚠️ Warning: This website may cause extreme hiring impulses',
+        '📞 Book a call today!',
+        '🌟 Award-winning terrible design',
+        '🎨 Lovingly crafted with Comic Sans',
+        '💜 BonziBuddy approved!',
+        '📎 Clippy certified!',
+        '🏆 Winner of "Worst Website Ever" (hopefully)',
+        '🌈 Now with 300% more rainbow gradients!',
+        '⏰ Time wasted: Priceless'
+      ];
+
+      let messageIndex = 0;
+      let charIndex = 0;
+      let isDeleting = false;
+
+      function typeStatusMessage() {
+        const currentMessage = statusMessages[messageIndex];
+        const statusText = document.getElementById('status-text');
+        
+        if (!statusText) return;
+        
+        if (!isDeleting && charIndex <= currentMessage.length) {
+          statusText.textContent = currentMessage.substring(0, charIndex);
+          charIndex++;
+          setTimeout(typeStatusMessage, 100);
+        } else if (isDeleting && charIndex >= 0) {
+          statusText.textContent = currentMessage.substring(0, charIndex);
+          charIndex--;
+          setTimeout(typeStatusMessage, 50);
+        } else {
+          if (isDeleting) {
+            isDeleting = false;
+            messageIndex = (messageIndex + 1) % statusMessages.length;
+            charIndex = 0;
+            setTimeout(typeStatusMessage, 500);
+          } else {
+            isDeleting = true;
+            setTimeout(typeStatusMessage, 2000);
+          }
+        }
+      }
+
+      function updateClock() {
+        const now = new Date();
+        const time = now.toLocaleTimeString();
+        const timeEl = document.getElementById('status-time');
+        if (timeEl) timeEl.textContent = time;
+      }
+
+      typeStatusMessage();
+      setInterval(updateClock, 1000);
+      updateClock();
+    }
+    
+    // ===================================
+    // FAKE WINDOWS BSOD
+    // ===================================
+    function fakeCrash() {
+      const bsod = document.getElementById('bsod-overlay');
+      if (!bsod) return;
+      
+      bsod.classList.add('active');
+      
+      // Animate progress bar
+      let progress = 0;
+      const interval = setInterval(() => {
+        progress += Math.random() * 15;
+        if (progress >= 100) {
+          progress = 100;
+          clearInterval(interval);
+          
+          // "Restart" after completion
+          setTimeout(() => {
+            bsod.style.opacity = '0';
+            bsod.style.transition = 'opacity 1s';
+            setTimeout(() => {
+              bsod.classList.remove('active');
+              bsod.style.opacity = '1';
+              alert('💻 System restored! That was close! (Not really, I was just messing with you!)');
+              
+              // BonziBuddy comments on the crash
+              if (window.bonzi) {
+                setTimeout(() => {
+                  window.bonzi.showMessage("🐵 Did you really think that was real? LOL!");
+                }, 2000);
+              }
+            }, 1000);
+          }, 2000);
+        }
+        
+        const percentEl = document.getElementById('crash-percent');
+        const barEl = document.getElementById('crash-bar');
+        if (percentEl) percentEl.textContent = Math.floor(progress);
+        if (barEl) barEl.style.width = progress + '%';
+      }, 300);
+    }
+    
+    // ===================================
+    // FAKE LOADING
+    // ===================================
+    function showFakeLoading() {
+      const loading = document.getElementById('fake-loading');
+      if (!loading) return;
+      
+      loading.classList.add('active');
+      
+      let progress = 0;
+      const interval = setInterval(() => {
+        progress += Math.random() * 20;
+        if (progress >= 100) {
+          progress = 100;
+          clearInterval(interval);
+          setTimeout(() => {
+            loading.classList.remove('active');
+          }, 500);
+        }
+        
+        const barEl = document.getElementById('fake-load-bar');
+        const textEl = document.getElementById('fake-load-text');
+        if (barEl) barEl.style.width = progress + '%';
+        if (textEl) textEl.textContent = Math.floor(progress) + '%';
+      }, 200);
+    }
+    
+    // Global function for fake loading
+    window.showFakeLoading = showFakeLoading;
+    
+    // ===================================
+    // FAKE COUNTER
+    // ===================================
+    setInterval(() => {
+      const counter = document.getElementById('fake-counter');
+      if (counter) {
+        let num = parseInt(counter.textContent);
+        num += Math.floor(Math.random() * 1000) + 1;
+        counter.textContent = num.toString();
+      }
+    }, 3000);
+    
+    // ===================================
+    // GUESTBOOK
+    // ===================================
+    function addGuestbookEntry(e) {
+      e.preventDefault();
+      
+      const name = document.getElementById('guest-name').value || 'Anonymous';
+      const message = document.getElementById('guest-message').value || 'This website is AMAZING!';
+      
+      alert(`✅ Thanks ${name}! Your entry has been submitted!\n\n(Just kidding, it went straight to /dev/null 🗑️)\n\nBut we appreciate the thought! 💜`);
+      
+      // BonziBuddy responds
+      if (window.bonzi) {
+        setTimeout(() => {
+          window.bonzi.showMessage(`🐵 Thanks for signing the guestbook, ${name}! You're the best!`);
+        }, 1000);
+      }
+      
+      // Reset form
+      document.getElementById('guest-name').value = '';
+      document.getElementById('guest-message').value = '';
+    }
   </script>
 </body>
 </html>
