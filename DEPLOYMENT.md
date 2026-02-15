@@ -31,6 +31,7 @@ Perfect balance of irony and humor. "Legendary" quality... legendarily BAD!
      - Framework preset: **Next.js**
      - Build command: `npm run build`
      - Build output directory: `out`
+     - Root directory: `/`
    - Click "Save and Deploy"
 
 3. **Add Custom Domain**:
@@ -62,7 +63,11 @@ wrangler pages deploy out --project-name=worst-site-ever
 
 ## 📋 What's Been Configured
 
-✅ `wrangler.toml` - Cloudflare Pages configuration  
+✅ `wrangler.toml` - Cloudflare Pages configuration (FIXED!)
+- ⚠️ **Important:** Pages projects don't support `[build]` section in wrangler.toml
+- Build command is configured in Cloudflare dashboard instead
+- Only includes: name, pages_build_output_dir, compatibility_date
+
 ✅ `next.config.ts` - Static export for Pages  
 ✅ Build output to `out/` directory  
 
@@ -77,8 +82,15 @@ wrangler pages deploy out --project-name=worst-site-ever
 
 - Test build locally before deploying
 - Use Cloudflare dashboard for first deploy (easier)
+- Build command goes in dashboard, NOT wrangler.toml
 - Set up GitHub Actions for auto-deploy later
 - Make sure DNS is properly configured
+
+## 🔧 Troubleshooting
+
+### Error: "Configuration file for Pages projects does not support 'build'"
+**FIXED!** The wrangler.toml has been updated to remove the `[build]` section.
+Build commands are configured in the Cloudflare Pages dashboard instead.
 
 ---
 
