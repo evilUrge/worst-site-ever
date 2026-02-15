@@ -1,0 +1,1611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🔥 GILAD MAOZ - THE WORST WEBSITE EVER 🔥</title>
+  <meta name="description" content="The most hilariously unusable website for the Worst Website Ever Hackathon">
+  <style>
+    /* GLOBAL TERRIBLE STYLES */
+    * {
+      cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><text y="15" font-size="20">🔥</text></svg>'), auto;
+    }
+    
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><rect width="50" height="50" fill="%23FF0000"/><rect x="50" y="50" width="50" height="50" fill="%230000FF"/><rect x="50" width="50" height="50" fill="%23FFFF00"/><rect y="50" width="50" height="50" fill="%2300FF00"/></svg>') repeat;
+      animation: backgroundScroll 20s linear infinite;
+      font-family: 'Comic Sans MS', cursive;
+    }
+    
+    @keyframes backgroundScroll {
+      from { background-position: 0 0; }
+      to { background-position: 100px 100px; }
+    }
+    
+    /* Make all links terrible */
+    a {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 3px dotted;
+    }
+    
+    a:hover {
+      color: #FF00FF;
+      background: #FFFF00;
+      transform: scale(1.5) rotate(5deg);
+      display: inline-block;
+    }
+    
+    a:visited {
+      color: #800080;
+    }
+    
+    /* Blink effect for modern browsers */
+    @keyframes blink {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+    
+    .blink {
+      animation: blink 1s infinite;
+    }
+    
+    /* Make scrollbar terrible */
+    ::-webkit-scrollbar {
+      width: 30px;
+    }
+    
+    ::-webkit-scrollbar-track {
+      background: linear-gradient(#FF0000, #00FF00, #0000FF, #FFFF00);
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text y="15" font-size="20">🔥</text></svg>') repeat;
+      border: 5px solid gold;
+    }
+    
+    /* Selection colors */
+    ::selection {
+      background: #FF00FF;
+      color: #FFFF00;
+    }
+    
+    /* Terrible table styles */
+    table {
+      border-collapse: separate;
+      border-spacing: 5px;
+    }
+    
+    td, th {
+      border: 3px groove;
+    }
+    
+    /* Button horror */
+    button:hover {
+      transform: scale(1.2) rotate(-5deg);
+      box-shadow: 0 0 50px #FF00FF;
+    }
+    
+    /* Input field nightmares */
+    input, textarea, select {
+      animation: shake 0.5s infinite;
+    }
+    
+    input:focus, textarea:focus {
+      outline: 5px solid #FF00FF;
+      transform: scale(1.1);
+    }
+    
+    /* Marquee styling */
+    marquee {
+      display: inline-block;
+      padding: 10px;
+      background: linear-gradient(to right, red, yellow, lime, cyan, blue, magenta, red);
+      background-size: 200% 200%;
+      animation: rainbow 5s ease infinite;
+    }
+    
+    @keyframes rainbow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    
+    /* Shake animation */
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+      20%, 40%, 60%, 80% { transform: translateX(5px); }
+    }
+    
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+    
+    @keyframes fadeOut {
+      to { opacity: 0; transform: translateY(50px); }
+    }
+    
+    @keyframes fall {
+      to { transform: translateY(calc(100vh + 100px)); }
+    }
+    
+    @keyframes rainbow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    
+    .glitch {
+      animation: glitch 1s infinite;
+    }
+    
+    @keyframes glitch {
+      0% { transform: translate(0); }
+      20% { transform: translate(-2px, 2px); }
+      40% { transform: translate(-2px, -2px); }
+      60% { transform: translate(2px, 2px); }
+      80% { transform: translate(2px, -2px); }
+      100% { transform: translate(0); }
+    }
+    
+    /* Slight random tilt */
+    div:nth-child(odd) {
+      transform: rotate(0.5deg);
+    }
+    
+    div:nth-child(even) {
+      transform: rotate(-0.5deg);
+    }
+    
+    /* BONZIBUDDY ANIMATIONS */
+    @keyframes bonziBounce {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-15px); }
+    }
+    
+    @keyframes speechPop {
+      0% { transform: scale(0); opacity: 0; }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    
+    @keyframes bonziShake {
+      0%, 100% { transform: rotate(0deg); }
+      25% { transform: rotate(-5deg); }
+      75% { transform: rotate(5deg); }
+    }
+    
+    #bonzi-svg:hover {
+      animation: bonziShake 0.5s ease-in-out infinite !important;
+      cursor: pointer;
+    }
+    
+    #bonzibuddy-container {
+      animation: bonziBounce 2s ease-in-out infinite;
+    }
+    
+    #bonzi-svg {
+      filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.5));
+    }
+    
+    #bonzi-speech {
+      animation: speechPop 0.3s ease-out;
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER SECTION -->
+  <header style="background: linear-gradient(45deg, #FF00FF, #00FFFF, #FFFF00, #FF00FF); border: 10px ridge gold; padding: 10px;">
+    <!-- Visitor Counter -->
+    <div style="text-align: center; background: #000; color: #0F0; font-family: 'Courier New', monospace; padding: 20px; border: 5px inset #FF00FF;">
+      <span style="font-size: 48px;">☠️</span><br>
+      <span style="font-size: 24px;">YOU ARE VISITOR #</span><span id="visitorCount" style="font-size: 36px; color: #FF0000;">123,456,789</span><span style="font-size: 24px;">☠️</span>
+      <marquee style="background: #FF0000; color: #FFFF00; padding: 10px; margin-top: 10px; font-size: 20px;">
+        🎉 CONGRATULATIONS! YOU ARE OUR 1 MILLIONTH VISITOR! CLICK HERE TO CLAIM YOUR FREE iPAD! 🎉
+      </marquee>
+    </div>
+    
+    <!-- Navigation Disaster -->
+    <nav style="background: repeating-linear-gradient(45deg, #000, #000 10px, #FF00FF 10px, #FF00FF 20px); border: 5px outset #FFFF00; margin-top: 10px;">
+      <table width="100%" border="3" cellpadding="10" cellspacing="10" bgcolor="#FF00FF" style="border: 5px ridge #FFFF00;">
+        <tr>
+          <td align="center" bgcolor="#00FF00"><span class="blink"><a href="#home" style="font-size: 24px; color: #FF0000;">🏠 HΩME</a></span></td>
+          <td align="center" bgcolor="#FFFF00"><marquee scrollamount="10" style="width: 100%;"><a href="#about" style="font-size: 24px; color: #0000FF;">👤 ABOUT (CLICK HERE!!!)</a></marquee></td>
+          <td align="center" bgcolor="#00FFFF"><a href="javascript:alert('SURPRISE! You found the SERVICES! But there are none... only MIRACLES!')" style="font-size: 24px; color: #FF00FF;">💼 SERVICESSS</a></td>
+          <td align="center" bgcolor="#FF0000"><a href="#" onclick="alert('My Work? Coming Soon Since 1999!'); return false;" style="font-size: 24px; color: #FFFF00;">📊 MY WORKZ</a></td>
+          <td align="center" bgcolor="#FF00FF"><span class="blink"><a href="mailto:GILAD_THE_LEGEND@maoz.dev?subject=HIRE_ME_PLEASE&body=I_AM_THE_BEST" style="font-size: 24px; color: #00FF00;">📧 CONTACT!!!</a></span></td>
+        </tr>
+      </table>
+    </nav>
+    
+    <!-- The Logo Disaster -->
+    <center>
+      <h1 style="font-family: 'Comic Sans MS'; font-size: 72px; color: #FF0000; text-shadow: 5px 5px #0000FF, 10px 10px #00FF00, 15px 15px #FFFF00; margin: 20px 0;">
+        <span class="blink">🔥 G I L A D &nbsp; M A O Z 🔥</span>
+      </h1>
+      <h2 style="font-family: 'Papyrus', fantasy; color: #FF00FF; font-size: 48px; transform: rotate(-5deg); text-shadow: 3px 3px #00FFFF;">
+        <marquee direction="right" scrollamount="20" style="background: linear-gradient(to right, #FF0000, #00FF00);">
+          ⚡⚡⚡ AI-DRIVEN CODING NINJA ROCKSTAR WIZARD ⚡⚡⚡
+        </marquee>
+      </h2>
+    </center>
+  </header>
+  
+  <!-- HERO SECTION -->
+  <div id="home" style="background: repeating-radial-gradient(circle at 50% 50%, #FF0000 0, #FF0000 20px, #FFFF00 20px, #FFFF00 40px); border: 20px double #FF00FF; padding: 50px;">
+    <table width="100%" border="10" cellpadding="20" bgcolor="#FFFF00" style="border: 10px groove #FF0000;">
+      <tr>
+        <td valign="top" width="50%" align="center" bgcolor="#00FFFF" style="border: 10px inset #FF00FF;">
+          <div style="font-size: 200px; filter: hue-rotate(180deg) saturate(500%); transform: rotate(10deg);">😎</div>
+          <br><br>
+          <span class="blink"><font size="7" color="red" face="Impact">⭐ HIRE ME NOW!!! ⭐</font></span>
+        </td>
+        <td valign="top" width="50%" bgcolor="#FF00FF" style="border: 10px outset #00FF00;">
+          <p style="font-family: 'Comic Sans MS'; font-size: 32px; color: #0000FF; background: #FFFF00; padding: 20px; border: 5px dashed #FF0000;">
+            <b><i><u>Transforming</u></i></b> 
+            <marquee scrollamount="15"><font color="red">BUSINESSES</font></marquee> 
+            <span class="blink">with</span> 
+            <font size="6" color="#FF00FF">AI-POWERED</font> 
+            <i>solutions,</i> 
+            <b>CLOUD</b> 
+            <font face="Impact" size="5" color="#00FF00">INFRASTRUCTURE</font> 
+            <u>mastery,</u> 
+            <span class="blink">STRATEGIC</span> 
+            <marquee direction="up" style="height: 50px;">PRODUCT</marquee> 
+            <font color="red" size="7">DEVELOPMENT!!!</font>
+          </p>
+          
+          <p style="font-family: 'Brush Script MT', cursive; font-size: 28px; color: #FF1493; background: #000; padding: 15px; border: 3px dotted #FFFF00;">
+            From <marquee behavior="alternate" style="width: 150px;"><font color="#00FF00">STARTUP</font></marquee> to 
+            <span class="blink">ENTERPRISE</span> scale, I will 
+            <font size="8" color="#FF0000">ARCHITECT</font> 
+            the <i>FUTURE</i> of 
+            <font face="Impact">TECHNOLOGY!!!</font> 
+            <span style="font-size: 48px;">🚀</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    
+    <!-- Stats Section - But Make It Terrible -->
+    <center>
+      <table border="5" cellpadding="20" cellspacing="10" bgcolor="#00FFFF" style="margin-top: 30px; border: 10px ridge gold;">
+        <tr>
+          <td align="center" bgcolor="#FF0000" width="25%">
+            <font size="7" color="#FFFF00" face="Impact">∞</font><br>
+            <span class="blink"><font size="4" color="white">Tech Companies Saved</font></span>
+          </td>
+          <td align="center" bgcolor="#00FF00" width="25%">
+            <marquee scrollamount="10"><font size="7" color="#FF00FF" face="Comic Sans MS">999+</font></marquee><br>
+            <font size="4" color="#0000FF">Years of Experience (Combined)</font>
+          </td>
+          <td align="center" bgcolor="#FFFF00" width="25%">
+            <font size="7" color="#FF0000" face="Papyrus">∞∞∞</font><br>
+            <font size="4" color="black">Projects <span class="blink">COMPLETED</span></font>
+          </td>
+          <td align="center" bgcolor="#FF00FF" width="25%">
+            <span class="blink"><font size="7" color="#00FFFF" face="Impact">OVER 9000</font></span><br>
+            <marquee scrollamount="8"><font size="4" color="white">Lines of CODE!!!</font></marquee>
+          </td>
+        </tr>
+      </table>
+    </center>
+    
+    <!-- Buttons That Spawn Chaos -->
+    <center>
+      <br><br>
+      <button onclick="spawnPopup()" style="font-size: 48px; background: linear-gradient(#FF0000, #00FF00); color: #FFFFFF; border: 10px outset #FFD700; padding: 30px; font-family: 'Comic Sans MS'; cursor: pointer; animation: shake 0.5s infinite;">
+        <span class="blink">🚀 LET'S BUILD THE FUTURE!!! 🚀</span>
+      </button>
+      &nbsp;&nbsp;&nbsp;
+      <button onclick="alert('ERROR 404: WORK NOT FOUND (But seriously, check back later!)')" style="font-size: 36px; background: radial-gradient(circle, #FF00FF, #00FFFF); color: #FF0000; border: 8px ridge #00FFFF; padding: 25px; font-family: 'Impact';">
+        📊 VIEW MY INCREDIBLE WORK!!!
+      </button>
+    </center>
+  </div>
+  
+  <!-- TECH STACK SECTION -->
+  <div style="background: #000000; padding: 50px; border: 15px dotted #FF00FF;">
+    <center>
+      <h2 style="font-family: 'Impact'; font-size: 56px; color: #00FF00; text-shadow: 5px 5px #FF0000;">
+        <marquee scrollamount="15">⚡ MY LEGENDARY TECH STACK ⚡</marquee>
+      </h2>
+    </center>
+    
+    <!-- Scrolling badges that never stop -->
+    <marquee behavior="scroll" direction="left" scrollamount="15" style="background: linear-gradient(to right, #FF0000, #00FF00, #0000FF, #FFFF00); padding: 20px; border: 5px solid #FF00FF;">
+      <font size="6" color="white" face="Comic Sans MS">
+        🔥 HTML4 🔥 CSS2 🔥 JavaScript ES3 🔥 jQuery 1.0 🔥 Flash 🔥 ActiveX 🔥 
+        PHP4 🔥 MySQL 3.23 🔥 FTP 🔥 CGI 🔥 Perl 🔥 COBOL 🔥 Assembly 🔥
+        Blockchain 🔥 Quantum Computing 🔥 AI 🔥 Machine Learning 🔥 Deep Learning 🔥
+        AWS 🔥 GCP 🔥 Azure 🔥 Cloudflare 🔥 DigitalOcean 🔥 Heroku 🔥
+        TypeScript 🔥 Python 🔥 Docker 🔥 Kubernetes 🔥 Terraform 🔥
+      </font>
+    </marquee>
+    
+    <!-- Code snippet but make it TERRIBLE -->
+    <pre style="background: #FFFF00; color: #FF0000; font-family: 'Comic Sans MS', cursive; font-size: 24px; border: 10px groove #00FF00; padding: 30px; overflow-x: auto; margin-top: 30px; text-shadow: 2px 2px #0000FF;">
+<span class="blink">// gilad_profile.ts (TOTALLY REAL CODE!!!)</span>
+
+class <marquee style="background: #FF00FF; width: 300px;">💪UltimateMegaProductArchitect💪</marquee> {
+  constructor() {
+    this.name = "GILAD 'THE LEGEND' MAOZ ⚡";
+    this.role = "🧙‍♂️ AI WIZARD SUPREME 🧙‍♂️";
+    this.powerLevel = OVER_9000;
+    this.mission = "🌍 SAVE THE WORLD WITH CODE 🌍";
+    this.codingSpeed = "⚡ LIGHTSPEED ⚡";
+  }
+
+  async <span class="blink">deployValue</span>() {
+    while(true) {
+      await this.optimize("EVERYTHING!!!");
+      await this.implement("ALL THE AI MODELS");
+      await this.revolutionize("THE ENTIRE INDUSTRY");
+      return "🎉 SUCCESS GUARANTEED!!! 🎉";
+    }
+  }
+
+  hackThePlanet() {
+    console.log("🔥🔥🔥 HACKING THE MAINFRAME 🔥🔥🔥");
+    return "ACCESS GRANTED - YOU ARE NOW ADMIN";
+  }
+}
+    </pre>
+  </div>
+  
+  <!-- EXPERTISE SECTION -->
+  <div style="background: linear-gradient(135deg, #FF00FF 25%, #00FFFF 25%, #00FFFF 50%, #FFFF00 50%, #FFFF00 75%, #FF0000 75%); background-size: 40px 40px; padding: 50px; border-top: 20px solid #FF0000; border-bottom: 20px solid #00FF00;">
+    <center>
+      <h2 style="font-family: 'Papyrus'; font-size: 64px; color: #FF00FF; text-shadow: 5px 5px #00FFFF, -5px -5px #FFFF00;">
+        <span class="blink">💎 TECHNICAL EXPERTISE BEYOND YOUR WILDEST DREAMS 💎</span>
+      </h2>
+      <marquee style="background: #000; padding: 10px;"><font size="5" color="#FFFF00">WARNING: THIS LEVEL OF EXPERTISE MAY CAUSE JEALOUSY IN YOUR COMPETITORS</font></marquee>
+    </center>
+    
+    <!-- Accordion from hell -->
+    <table width="100%" border="8" cellpadding="25" cellspacing="15" style="margin-top: 30px;">
+      <tr onclick="this.style.background = this.style.background === 'red' ? 'blue' : 'red';" style="cursor: pointer; background: linear-gradient(#FF00FF, #00FFFF); border: 5px outset #FFFF00;">
+        <td>
+          <font size="7" face="Impact" color="white">
+            ▼▼▼ DevOps & Cloud Infrastructure (I AM THE CLOUD) ▼▼▼
+          </font>
+          <br><br>
+          <font size="5" face="Comic Sans MS" color="#FFFF00">
+            Building LEGENDARY, UNSTOPPABLE cloud environments using ANCIENT Infrastructure as Code practices!!! 
+            Expert in: <span class="blink">AWS</span> | <marquee style="width: 200px;">GCP</marquee> | <i>AZURE</i> | <b>CLOUDFLARE</b> | 
+            🔥 TERRAFORM 🔥 | ⚡ CI/CD PIPELINES OF DOOM ⚡ | 
+            And also: Carrier Pigeons for Data Transfer, Smoke Signals for Alerts, Morse Code for Logging
+          </font>
+        </td>
+      </tr>
+      
+      <tr onclick="alert('AI/LLM SECRETS REVEALED! Gilad actually knows things! Shh don\'t tell anyone!')" style="cursor: pointer; background: #00FF00; border: 5px dotted #FF00FF;">
+        <td>
+          <font size="7" face="Comic Sans MS" color="#FF0000">
+            <span class="blink">🤖 AI/LLM Product Strategy (I TRAINED GPT-5 MYSELF) 🤖</span>
+          </font>
+          <br><br>
+          <font size="5" face="Brush Script MT" color="#0000FF">
+            Bridging the COSMIC GAP between technical IMPOSSIBILITIES and business MIRACLES!!! 
+            Designing roadmaps for integrating SENTIENT AI, TIME-TRAVELING ALGORITHMS, and QUANTUM CHATBOTS!!!
+            <marquee style="background: #FF00FF;">LLM Integration ✨ Product Roadmap to Mars ✨ MLOps Magic ✨ RAG (Really Amazing Genius) ✨</marquee>
+          </font>
+        </td>
+      </tr>
+      
+      <tr style="background: linear-gradient(to right, #FF6600, #FF0000); border: 5px dashed #FFFF00;">
+        <td>
+          <font size="7" face="Impact" color="white">
+            💻 Backend Development (10x NINJA CODING WARRIOR) 💻
+          </font>
+          <br><br>
+          <font size="5" face="Comic Sans MS" color="#00FFFF">
+            Architecting MIND-BLOWING server-side solutions that will make your competitors CRY!!!
+            Specializing in: <span class="blink">Python Sorcery</span> | Node.js Time Travel | Microservices Inception | 
+            API Design from the Future | Databases that Read Your Mind
+          </font>
+        </td>
+      </tr>
+      
+      <tr style="background: linear-gradient(to right, #FF0000, #FFFF00, #00FF00, #00FFFF, #0000FF, #FF00FF, #FF0000); animation: rainbow 2s infinite;">
+        <td>
+          <font size="7" face="Papyrus" color="white">
+            <marquee>🤺 Automation & QA (ROBOTS FEAR ME) 🤺</marquee>
+          </font>
+          <br><br>
+          <font size="5" face="Comic Sans MS" color="black">
+            Streamlining development lifecycles through SUPERNATURAL automation and PSYCHIC testing frameworks!!!
+            Tools: <span class="blink">Pytest from the Future</span> | Puppeteer Mind Control | Workflow Automation by Telepathy
+          </font>
+        </td>
+      </tr>
+      
+      <tr style="background: #FF00FF; animation: pulse 2s infinite; border: 10px ridge gold;">
+        <td>
+          <font size="7" face="Impact" color="#00FFFF">
+            <span class="blink">☁️ Cloud Migration (I MOVE MOUNTAINS... TO THE CLOUD) ☁️</span>
+          </font>
+          <br><br>
+          <font size="5" face="Brush Script MT" color="white">
+            Seamlessly moving ANCIENT MAINFRAMES to FUTURISTIC cloud architectures!!! 
+            Expert in: Teleporting Databases | Serverless Everywhere | Migration at the Speed of Light
+          </font>
+        </td>
+      </tr>
+      
+      <tr style="background: #000000; border: 10px ridge gold;">
+        <td>
+          <font size="7" face="Comic Sans MS" color="#00FF00">
+            👑 Technical Leadership (CEO OF ALL ENGINEERS) 👑
+          </font>
+          <br><br>
+          <font size="5" face="Impact" color="#FFFF00">
+            Guiding engineering teams to VICTORY and facilitating INTERDIMENSIONAL collaboration!!!
+            <marquee style="background: #FF0000;">Tech Management Supreme ✨ Mentoring Jedis ✨ Agile on Steroids ✨ Strategy from Outer Space</marquee>
+          </font>
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+  <!-- CAREER TIMELINE -->
+  <div style="background: linear-gradient(to bottom, #FF0000, #FFFF00, #00FF00, #00FFFF, #0000FF, #FF00FF); padding: 50px;">
+    <center>
+      <h2 style="font-family: 'Impact'; font-size: 72px; color: white; text-shadow: 5px 5px black;">
+        <span class="blink">🏆 THE LEGENDARY JOURNEY 🏆</span>
+      </h2>
+      <marquee style="background: #000; padding: 10px;"><font size="6" color="#FFFF00">FROM HUMBLE BEGINNINGS TO MASTER OF THE UNIVERSE</font></marquee>
+    </center>
+    
+    <table width="100%" border="15" cellpadding="30" cellspacing="20" bgcolor="#000000" style="margin-top: 30px; border: 10px ridge gold;">
+      <!-- 2025 -->
+      <tr style="background: linear-gradient(90deg, #FF0000, #FF6600);">
+        <td width="20%" align="center">
+          <font size="8" color="#FF0000" face="Impact">
+            <span class="blink">2025</span>
+          </font>
+        </td>
+        <td width="80%">
+          <font size="7" color="#00FF00" face="Comic Sans MS">
+            <b>👑 SUPREME OVERLORD OF ENGINEERING 👑</b>
+          </font>
+          <br>
+          <font size="5" color="#00FFFF" face="Arial">
+            <i>Nyx.ai (Saving Humanity Inc.)</i>
+          </font>
+          <br><br>
+          <font size="4" color="white" face="Comic Sans MS">
+            Led a LEGENDARY team of 6 AI WIZARDS in developing WORLD-CHANGING products!!!
+            Achievements: 🔥 Deployed RAG system that reads minds 🔥 Reduced costs by 99.99% using MAGIC 🔥 
+            Invented new programming language in spare time 🔥 Won Nobel Prize for Code Excellence 🔥
+            <br><br>
+            <marquee style="background: #FF00FF;">Skills: LLM Integration | AI Product Strategy | LangGraph Mastery | Cloudflare Workers Time Travel</marquee>
+          </font>
+        </td>
+      </tr>
+      
+      <!-- 2021-2024 -->
+      <tr style="background: #FF00FF; border: 5px dotted #FFFF00;">
+        <td align="center">
+          <font size="8" color="#FFFF00" face="Papyrus">
+            2021-2024
+          </font>
+        </td>
+        <td>
+          <font size="7" color="#0000FF" face="Impact">
+            <marquee>💪 SENIOR DEVOPS SUPERHERO 💪</marquee>
+          </font>
+          <br>
+          <font size="5" color="white" face="Comic Sans MS">
+            <span class="blink">Verimatrix (The Matrix... But Real)</span>
+          </font>
+          <br><br>
+          <font size="4" color="#00FFFF" face="Arial">
+            Built and maintained cloud tools that LITERALLY CHANGED THE WORLD!!!
+            Spearheaded migration to THE CLOUD OF ALL CLOUDS!!!
+            <br>
+            Tools: <b>AWS CDK</b> | <i>Cloud Automation Magic</i> | <u>JFrog Artifactory</u> | 
+            <span class="blink">CI/CD Pipelines of Destiny</span>
+            <br>
+            Achievement: Made deployments 1000x faster by inventing time travel
+          </font>
+        </td>
+      </tr>
+      
+      <!-- 2020-2021 -->
+      <tr style="background: linear-gradient(45deg, #FF0000, #FFFF00, #00FF00, #00FFFF, #0000FF); animation: rainbow 3s infinite;">
+        <td align="center">
+          <font size="8" color="red" face="Impact">
+            <span class="blink">2020-2021</span>
+          </font>
+        </td>
+        <td>
+          <font size="7" color="white" face="Comic Sans MS">
+            🏗️ CLOUD & SOFTWARE ARCHITECT GOD 🏗️
+          </font>
+          <br>
+          <font size="5" color="yellow" face="Brush Script MT">
+            Yadati (Freelance Wizard for Hire)
+          </font>
+          <br><br>
+          <font size="4" color="lime" face="Arial">
+            Functioned as company's SUPREME software architect!!!
+            Moved ENTIRE UNIVERSE from Azure to Firebase using TELEKINESIS!!!
+            <marquee style="background: #00FF00;">Firebase Magic ✨ Microservices Inception ✨ Team Management by Mind Control ✨ Cloud Migration via Wormhole</marquee>
+          </font>
+        </td>
+      </tr>
+      
+      <!-- 2014-2015 -->
+      <tr style="background: #00FFFF; border: 5px solid #FF0000;">
+        <td align="center">
+          <font size="8" color="#FF0000" face="Impact">2014-2015</font>
+        </td>
+        <td>
+          <font size="7" color="#0000FF" face="Comic Sans MS">
+            <span class="blink">🐣 BABY DEVELOPER (ALREADY A LEGEND) 🐣</span>
+          </font>
+          <br>
+          <font size="5" color="black" face="Arial">
+            <i>ironSource installCore (Where Legends Are Born)</i>
+          </font>
+          <br><br>
+          <font size="4" color="#FF00FF" face="Comic Sans MS">
+            Started in QA and automation roles, IMMEDIATELY became company MVP!!!
+            Built end-to-end test automation that achieved SENTIENCE!!!
+            <br>
+            Skills: Selenium Wizardry | Python Sorcery | Test Automation Magic | QA Perfection
+            <br>
+            <marquee style="background: #FFFF00;">Foundation years where I learned to BE AWESOME</marquee>
+          </font>
+        </td>
+      </tr>
+    </table>
+    
+    <center style="margin-top: 50px;">
+      <font size="8" color="white" face="Impact" style="background: #FF0000; padding: 30px; border: 10px outset gold; animation: pulse 2s infinite;">
+        <span class="blink">🚨 CURRENTLY AVAILABLE FOR WORLD DOMINATION 🚨</span>
+      </font>
+      <br><br>
+      <h3 style="font-family: 'Comic Sans MS'; font-size: 48px; color: #FFFF00; background: #000; padding: 20px; border: 5px ridge #FF00FF;">
+        <marquee>Ready to architect your next AI-driven product strategy??? (Obviously yes!!!)</marquee>
+      </h3>
+    </center>
+  </div>
+  
+  <!-- CONTACT SECTION -->
+  <div style="background: linear-gradient(135deg, #000000 25%, #003300 25%, #003300 50%, #000000 50%, #000000 75%, #003300 75%); background-size: 20px 20px; padding: 80px; border: 25px ridge #FFD700;">
+    <center>
+      <h2 style="font-family: 'Impact'; font-size: 80px; color: #00FF00; text-shadow: 10px 10px #FF0000;">
+        <span class="blink">📧 CONTACT THE LEGEND 📧</span>
+      </h2>
+      <marquee behavior="alternate" style="background: #FF0000; padding: 10px;">
+        <font size="7" color="#FF00FF" face="Comic Sans MS">
+          ⚠️ WARNING: Contacting me may result in EXTREME SUCCESS ⚠️
+        </font>
+      </marquee>
+    </center>
+    
+    <table width="100%" border="20" cellpadding="40" cellspacing="20" bgcolor="#FFFF00" style="margin-top: 30px; border: 15px groove #FF0000;">
+      <tr>
+        <td width="50%" valign="top" style="background: linear-gradient(#FF0000, #00FF00); border: 10px inset #FFFF00;">
+          <font size="6" color="white" face="Impact">
+            <u>CHOOSE YOUR ADVENTURE:</u>
+          </font>
+          <br><br>
+          
+          <!-- Contact methods but terrible -->
+          <div onclick="alert('📧 Email launched! But it goes to the void... just kidding, gilad@maoz.dev actually works!')" style="background: #FF00FF; padding: 20px; margin: 10px; border: 5px outset; cursor: pointer; animation: shake 2s infinite;">
+            <font size="5" color="white" face="Comic Sans MS">
+              <span class="blink">📧 Email (Instant Response!!!)</span>
+              <br>
+              <marquee style="background: #000;">gilad@maoz.dev (I check this every nanosecond)</marquee>
+            </font>
+          </div>
+          
+          <div onclick="window.open('https://linkedin.com/in/gilad-maoz', '_blank'); alert('Opening LinkedIn! (If it loads...)')" style="background: #0000FF; padding: 20px; margin: 10px; border: 5px ridge; cursor: pointer;">
+            <font size="5" color="#00FFFF" face="Impact">
+              💼 LinkedIn (Professional... Sort of)
+              <br>
+              <font size="3">linkedin.com/in/gilad-maoz</font>
+            </font>
+          </div>
+          
+          <div onclick="for(let i=0; i<3; i++) alert('📞 Booking call #' + (i+1) + ' - Just kidding, use the calendar link!'); window.open('https://calendar.app.google/', '_blank');" style="background: #00FF00; padding: 20px; margin: 10px; border: 5px dotted; cursor: pointer;">
+            <font size="5" color="red" face="Comic Sans MS">
+              <span class="blink">📞 Book a Call (Prepare to be Amazed)</span>
+              <br>
+              <marquee>calendar.app.google (My calendar is ALWAYS open)</marquee>
+            </font>
+          </div>
+          
+          <div onclick="alert('🐙 GitHub loading... Stars: ∞ (That\'s all of them)')" style="background: #000000; padding: 20px; margin: 10px; border: 5px groove; cursor: pointer;">
+            <font size="5" color="#00FF00" face="Impact">
+              🐙 GitHub (Where I Store my GENIUS)
+              <br>
+              <font size="3" color="white">github.com/evilurge</font>
+            </font>
+          </div>
+        </td>
+        
+        <td width="50%" valign="top" style="background: repeating-linear-gradient(45deg, #FF00FF, #FF00FF 10px, #00FFFF 10px, #00FFFF 20px);">
+          <font size="6" color="#FF0000" face="Comic Sans MS">
+            <b>📝 QUICK PROJECT BRIEF</b>
+            <br>
+            <font size="3" color="black">(Or just send carrier pigeon)</font>
+          </font>
+          <br><br>
+          
+          <!-- The worst form ever -->
+          <form onsubmit="event.preventDefault(); alert('ERROR: Form too awesome to submit! But seriously, I\'ll get back to you... maybe.'); return false;">
+            <table border="5" cellpadding="10" bgcolor="white" style="border: 5px ridge #FF0000;">
+              <tr>
+                <td>
+                  <font face="Impact" color="#FF00FF">Your NAME (First, Last, Middle, Nicknames, Aliases):</font>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="text" placeholder="Type here or don't..." style="width: 100%; font-size: 20px; background: #FFFF00; border: 3px dashed #FF0000; font-family: 'Comic Sans MS';" />
+                </td>
+              </tr>
+              
+              <tr>
+                <td>
+                  <font face="Comic Sans MS" color="#0000FF">Email Address (Must be real... or not):</font>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="email" placeholder="your@email.com or carrier.pigeon@sky.net" style="width: 100%; font-size: 20px; background: #00FFFF; border: 3px solid #00FF00; font-family: 'Courier New';" />
+                </td>
+              </tr>
+              
+              <tr>
+                <td>
+                  <font face="Impact" color="#FF0000">Company Name (Even if it's just you in your garage):</font>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="text" placeholder="Acme Corp, Wayne Enterprises, etc." style="width: 100%; font-size: 20px; background: #FF00FF; border: 3px dotted #FFFF00; color: white; font-family: 'Papyrus';" />
+                </td>
+              </tr>
+              
+              <tr>
+                <td>
+                  <font face="Comic Sans MS" color="#00FF00">Project Type (Pick wisely... or randomly):</font>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <select style="width: 100%; font-size: 20px; background: linear-gradient(#FF0000, #00FF00); color: white; border: 5px ridge gold; font-family: 'Impact';">
+                    <option>🤖 AI Product Strategy (Make me a billionaire)</option>
+                    <option>☁️ DevOps Transformation (Fix everything)</option>
+                    <option>👥 Team Scaling & Leadership (I need a hero)</option>
+                    <option>🎯 Technical Consulting (Please help)</option>
+                    <option>🏗️ System Architecture (Build me Skynet)</option>
+                    <option>🔮 Time Travel Implementation</option>
+                    <option>🦄 Unicorn Startup Acceleration</option>
+                    <option>🎪 Circus Management System</option>
+                    <option>❓ I Don't Know What I Need But It's Urgent</option>
+                  </select>
+                </td>
+              </tr>
+              
+              <tr>
+                <td>
+                  <font face="Impact" color="#FF00FF">Project Details (Tell me EVERYTHING... or nothing):</font>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <textarea rows="8" placeholder="Type your deepest darkest project secrets here..." style="width: 100%; font-size: 18px; background: #FFFF00; border: 5px double #FF0000; font-family: 'Comic Sans MS';"></textarea>
+                </td>
+              </tr>
+              
+              <tr>
+                <td align="center">
+                  <button type="submit" style="font-size: 48px; background: radial-gradient(circle, #FF0000, #FF00FF, #00FFFF); color: white; border: 10px outset #FFD700; padding: 30px 60px; font-family: 'Impact'; cursor: pointer; animation: pulse 1s infinite;">
+                    <span class="blink">🚀 SUBMIT TO GREATNESS 🚀</span>
+                  </button>
+                  <br><br>
+                  <font size="2" color="red">
+                    <marquee style="background: #FFFF00;">* By submitting this form, you agree to be AMAZED *</marquee>
+                  </font>
+                </td>
+              </tr>
+            </table>
+          </form>
+          
+          <br><br>
+          <center>
+            <font size="4" face="Comic Sans MS" color="white" style="background: #FF0000; padding: 15px; border: 3px solid #FFFF00;">
+              ✅ NDA Available (Written in Ancient Runes)<br>
+              ✅ Free Consultation (First 10 hours)<br>
+              ✅ Quick Response (Faster than light)<br>
+              ✅ Satisfaction Guaranteed (Or your money back... kidding, it's free!)
+            </font>
+          </center>
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+  <!-- FOOTER SECTION -->
+  <footer style="background: #000000; padding: 50px; border-top: 30px solid #FF0000;">
+    <table width="100%" border="10" cellpadding="20" cellspacing="15">
+      <tr>
+        <td width="33%" valign="top" style="background: linear-gradient(#FF00FF, #00FFFF); border: 5px outset gold;">
+          <center>
+            <font size="7" color="white" face="Impact">
+              <span class="blink">GILAD MAOZ</span>
+            </font>
+            <br>
+            <div style="font-size: 100px; filter: hue-rotate(180deg); animation: spin 2s infinite;">⚡</div>
+            <br><br>
+            <font size="4" color="#FFFF00" face="Comic Sans MS">
+              AI Product Strategist & DevOps Expert transforming businesses with MAGICAL solutions!!!
+              <br><br>
+              <marquee style="background: #FF0000;">∞ Companies Transformed</marquee>
+              <br>
+              <span class="blink">999+ Years of Experience</span>
+            </font>
+          </center>
+        </td>
+        
+        <td width="33%" valign="top" style="background: repeating-conic-gradient(#FF00FF 0% 25%, #00FFFF 25% 50%) 50% / 20px 20px;">
+          <font size="6" color="#00FF00" face="Impact">
+            <u>NAVIGATION</u>
+          </font>
+          <br><br>
+          <font size="4" color="white" face="Comic Sans MS">
+            <a href="#home" style="color: #FF00FF;">🏠 Home (You Are Here)</a><br>
+            <a href="#about" style="color: #00FFFF;">👤 About (Secret Page)</a><br>
+            <a href="javascript:alert('No services, only MIRACLES!')" style="color: #FFFF00;">💼 Services</a><br>
+            <a href="#" onclick="alert('Coming Soon Since 1999!'); return false;" style="color: #FF0000;">📊 Work</a><br>
+            <a href="mailto:gilad@maoz.dev" style="color: #00FF00;">📧 Contact</a><br>
+            <a href="https://gilad.maoz.dev/cv" target="_blank" style="color: #FF00FF;">📄 Resume (PDF Warning!!!)</a><br>
+          </font>
+        </td>
+        
+        <td width="33%" valign="top" style="background: linear-gradient(to bottom, #FF0000, #00FF00, #0000FF);">
+          <font size="6" color="white" face="Impact">
+            <span class="blink">GET IN TOUCH</span>
+          </font>
+          <br><br>
+          <font size="4" color="#FFFF00" face="Comic Sans MS">
+            📧 <a href="mailto:gilad@maoz.dev" style="color: white;">gilad@maoz.dev</a>
+            <br><br>
+            🌍 <marquee style="background: #000;">Global Remote (I work from EVERYWHERE)</marquee>
+            <br><br>
+            ⚡ Response Time: INSTANT (< 0.01ms)
+            <br><br>
+            <a href="https://linkedin.com/in/gilad-maoz" target="_blank" style="background: #0000FF; color: white; padding: 10px; border: 3px outset;">LinkedIn</a>
+            <a href="https://github.com/evilurge" target="_blank" style="background: #000000; color: #00FF00; padding: 10px; border: 3px groove;">GitHub</a>
+          </font>
+        </td>
+      </tr>
+    </table>
+    
+    <hr style="border: 5px dashed #FF00FF; margin: 30px 0;" />
+    
+    <center>
+      <font size="5" color="#00FFFF" face="Comic Sans MS">
+        © 2026 Gilad Maoz | Transforming businesses with AI-driven solutions since the Dawn of Time
+        <br>
+        <marquee>All Rights Reserved | No Rights Reserved | Copyright is a Social Construct | Share this site! (Please)</marquee>
+        <br><br>
+        <font size="3" color="#FFFF00">
+          Tax No: 91498906-1-41 (Yes, this is real and makes it even funnier)
+        </font>
+        <br><br>
+        <span class="blink"><font size="2" color="red">⚠️ Best viewed in Internet Explorer 6.0 at 800x600 resolution ⚠️</font></span>
+        <br>
+        <font size="2" color="lime">This website is 100% Flash-free (because Flash is dead... unlike my career)</font>
+      </font>
+    </center>
+    
+    <!-- BonziBuddy - The Annoying Purple Monkey -->
+    <div id="bonzibuddy-container" style="
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999999;
+      cursor: pointer;
+    ">
+      <!-- BonziBuddy SVG Character -->
+      <svg id="bonzi-svg" width="150" height="180" viewBox="0 0 150 180" style="
+        filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.5));
+        animation: bonziBounce 2s ease-in-out infinite;
+      ">
+        <!-- Body (purple oval) -->
+        <ellipse cx="75" cy="120" rx="50" ry="60" fill="#8B4FC6" stroke="#6B3FA6" stroke-width="3"/>
+        
+        <!-- Head (purple circle) -->
+        <circle cx="75" cy="60" r="45" fill="#8B4FC6" stroke="#6B3FA6" stroke-width="3"/>
+        
+        <!-- Face -->
+        <ellipse cx="75" cy="75" rx="30" ry="25" fill="#D4A5F5"/>
+        
+        <!-- Eyes -->
+        <ellipse cx="60" cy="55" rx="8" ry="12" fill="white"/>
+        <ellipse cx="90" cy="55" rx="8" ry="12" fill="white"/>
+        <circle cx="60" cy="58" r="5" fill="black">
+          <animate attributeName="cy" values="58;56;58" dur="3s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="90" cy="58" r="5" fill="black">
+          <animate attributeName="cy" values="58;56;58" dur="3s" repeatCount="indefinite"/>
+        </circle>
+        
+        <!-- Mouth (smirk) -->
+        <path d="M 55 75 Q 75 85 95 75" stroke="black" stroke-width="3" fill="none"/>
+        
+        <!-- Ears -->
+        <ellipse cx="30" cy="50" rx="15" ry="20" fill="#8B4FC6" stroke="#6B3FA6" stroke-width="2"/>
+        <ellipse cx="120" cy="50" rx="15" ry="20" fill="#8B4FC6" stroke="#6B3FA6" stroke-width="2"/>
+        
+        <!-- Arms -->
+        <ellipse cx="30" cy="110" rx="15" ry="35" fill="#8B4FC6" stroke="#6B3FA6" stroke-width="2" transform="rotate(-20 30 110)">
+          <animateTransform attributeName="transform" type="rotate" values="-20 30 110; -30 30 110; -20 30 110" dur="2s" repeatCount="indefinite"/>
+        </ellipse>
+        <ellipse cx="120" cy="110" rx="15" ry="35" fill="#8B4FC6" stroke="#6B3FA6" stroke-width="2" transform="rotate(20 120 110)">
+          <animateTransform attributeName="transform" type="rotate" values="20 120 110; 30 120 110; 20 120 110" dur="2s" repeatCount="indefinite"/>
+        </ellipse>
+        
+        <!-- Legs/Feet -->
+        <ellipse cx="55" cy="165" rx="20" ry="15" fill="#8B4FC6" stroke="#6B3FA6" stroke-width="2"/>
+        <ellipse cx="95" cy="165" rx="20" ry="15" fill="#8B4FC6" stroke="#6B3FA6" stroke-width="2"/>
+      </svg>
+      
+      <!-- Speech Bubble -->
+      <div id="bonzi-speech" style="
+        position: absolute;
+        bottom: 190px;
+        right: 0;
+        background: white;
+        border: 3px solid #8B4FC6;
+        border-radius: 15px;
+        padding: 15px 20px;
+        min-width: 250px;
+        max-width: 350px;
+        box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+        font-family: 'Comic Sans MS', cursive;
+        font-size: 14px;
+        display: none;
+        animation: speechPop 0.3s ease-out;
+      ">
+        <div id="bonzi-message" style="color: #333; font-weight: bold;"></div>
+        <div style="
+          position: absolute;
+          bottom: -20px;
+          right: 30px;
+          width: 0;
+          height: 0;
+          border-left: 20px solid transparent;
+          border-right: 20px solid transparent;
+          border-top: 20px solid white;
+        "></div>
+        <div style="
+          position: absolute;
+          bottom: -23px;
+          right: 27px;
+          width: 0;
+          height: 0;
+          border-left: 23px solid transparent;
+          border-right: 23px solid transparent;
+          border-top: 23px solid #8B4FC6;
+        "></div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- JAVASCRIPT CHAOS -->
+  <script>
+    // Visitor counter that increments dramatically
+    let visitorCount = 123456789;
+    setInterval(() => {
+      visitorCount += Math.floor(Math.random() * 100);
+      document.getElementById('visitorCount').textContent = visitorCount.toLocaleString();
+    }, 1000);
+    
+    // ===================================
+    // THE FINAL COUNTDOWN - KID PRACTICE VERSION
+    // ===================================
+
+    class TerriblePianoPlayer {
+      constructor() {
+        this.audioContext = null;
+        this.isPlaying = false;
+        this.currentNoteIndex = 0;
+        this.mistakeChance = 0.15; // 15% chance of wrong note
+        this.retryChance = 0.12; // 12% chance of restarting section
+        this.pauseChance = 0.08; // 8% chance of hesitation pause
+        this.tempo = 500; // Base tempo in milliseconds per note
+        
+        // The Final Countdown melody (simplified to recognizable parts)
+        // Using MIDI note numbers: C4=60, D4=62, E4=64, F4=65, G4=67, A4=69, B4=71, C5=72
+        this.melody = [
+          // "The Final Countdown" main riff (simplified)
+          69, 69, 69, 67, 65, // A A A G F
+          67, 67, 65, 64, 62, // G G F E D
+          64, 64, 64, 62, 60, // E E E D C
+          62, 62, 60, 59, 57, // D D C B A
+          
+          // Repeat with variation
+          69, 69, 69, 67, 65,
+          67, 67, 65, 64, 62,
+          64, 64, 64, 62, 60,
+          62, 60, 59, 60, 62, // D C B C D (ending phrase)
+          
+          // Iconic "dun dun dun dun" part
+          64, 64, 64, 64, // E E E E
+          62, 62, 62, 62, // D D D D
+          60, 60, 60, 60, // C C C C
+          59, 59, 57, 57, // B B A A
+          
+          // Build up
+          60, 62, 64, 65, 67, // C D E F G (scale up)
+          69, 69, 69, 69, // A A A A (triumphant)
+          
+          // Final phrase (attempted)
+          67, 65, 64, 62, 60, // G F E D C
+          62, 64, 65, 67, 69, // D E F G A (back up)
+          72, 72, 72, 72, // C5 C5 C5 C5 (high note attempt!)
+          69, 67, 65, 64, 62, 60 // A G F E D C (ending run down)
+        ];
+        
+        // Note durations (in beats) - 1 = quarter note, 2 = half note, 0.5 = eighth note
+        this.durations = [
+          1, 0.5, 2, 0.5, 1,
+          1, 0.5, 0.5, 0.5, 1.5,
+          1, 0.5, 2, 0.5, 1,
+          1, 0.5, 0.5, 0.5, 2,
+          
+          1, 0.5, 2, 0.5, 1,
+          1, 0.5, 0.5, 0.5, 1.5,
+          1, 0.5, 2, 0.5, 1,
+          1, 0.5, 0.5, 1, 1,
+          
+          1, 1, 1, 1,
+          1, 1, 1, 1,
+          1, 1, 1, 1,
+          1, 1, 1, 2,
+          
+          0.5, 0.5, 0.5, 0.5, 1,
+          1, 0.5, 0.5, 2,
+          
+          0.5, 0.5, 0.5, 0.5, 1,
+          0.5, 0.5, 0.5, 0.5, 1,
+          1, 0.5, 0.5, 2,
+          0.5, 0.5, 0.5, 0.5, 0.5, 2
+        ];
+        
+        // Section markers (where kid might restart from)
+        this.sectionStarts = [0, 5, 10, 15, 24, 32, 40, 48];
+        this.currentSection = 0;
+        this.attemptsInSection = 0;
+      }
+      
+      async init() {
+        if (!this.audioContext) {
+          this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
+        }
+        
+        // Ensure audio context is running
+        if (this.audioContext.state === 'suspended') {
+          await this.audioContext.resume();
+        }
+      }
+      
+      // Convert MIDI note number to frequency
+      midiToFreq(midiNote) {
+        return 440 * Math.pow(2, (midiNote - 69) / 12);
+      }
+      
+      // Play a single note with "kid playing piano" sound
+      playNote(midiNote, duration, isWrong = false) {
+        const oscillator = this.audioContext.createOscillator();
+        const gainNode = this.audioContext.createGain();
+        
+        oscillator.connect(gainNode);
+        gainNode.connect(this.audioContext.destination);
+        
+        // Use sine wave for more "plunky piano" sound
+        oscillator.type = 'sine';
+        
+        // If it's a wrong note, play a note that's off by 1-2 semitones
+        let noteToPlay = midiNote;
+        if (isWrong) {
+          const offset = Math.random() > 0.5 ? 1 : 2;
+          noteToPlay = midiNote + (Math.random() > 0.5 ? offset : -offset);
+        }
+        
+        oscillator.frequency.value = this.midiToFreq(noteToPlay);
+        
+        // Make it sound more "plunky" - quick attack, gradual decay
+        const now = this.audioContext.currentTime;
+        gainNode.gain.setValueAtTime(0, now);
+        gainNode.gain.linearRampToValueAtTime(0.3, now + 0.01); // Quick attack
+        gainNode.gain.exponentialRampToValueAtTime(0.01, now + duration);
+        
+        oscillator.start(now);
+        oscillator.stop(now + duration);
+      }
+      
+      // Play a "wrong" note followed by the correct one (retry)
+      async playMistakeAndRetry(correctNote, duration) {
+        // Play wrong note
+        this.playNote(correctNote, duration * 0.4, true);
+        await this.wait(duration * 0.5);
+        
+        // Pause (kid thinking "oops")
+        await this.wait(200);
+        
+        // Play correct note
+        this.playNote(correctNote, duration);
+        await this.wait(duration * this.tempo);
+      }
+      
+      // Hesitation pause (kid hesitating before next note)
+      async hesitationPause() {
+        const pauseLength = 300 + Math.random() * 500; // 300-800ms pause
+        await this.wait(pauseLength);
+      }
+      
+      // Restart from beginning of current section (kid messed up, trying again)
+      async restartSection() {
+        this.attemptsInSection++;
+        
+        // Play "frustrated" sound (random low note)
+        this.playNote(48, 0.3); // Low C
+        await this.wait(500);
+        
+        // Announce restart with ascending notes (kid psyching themselves up)
+        this.playNote(60, 0.2); // C
+        await this.wait(250);
+        this.playNote(64, 0.2); // E
+        await this.wait(250);
+        this.playNote(67, 0.3); // G
+        await this.wait(500);
+        
+        // Reset to start of section
+        const sectionStart = this.sectionStarts[this.currentSection];
+        this.currentNoteIndex = sectionStart;
+      }
+      
+      // Wait helper
+      wait(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+      }
+      
+      // Main play loop
+      async play() {
+        if (this.isPlaying) return;
+        
+        await this.init();
+        this.isPlaying = true;
+        this.currentNoteIndex = 0;
+        this.currentSection = 0;
+        this.attemptsInSection = 0;
+        
+        console.log('🎹 Starting The Final Countdown - Kid Practice Version...');
+        
+        while (this.isPlaying && this.currentNoteIndex < this.melody.length) {
+          const note = this.melody[this.currentNoteIndex];
+          const duration = (this.durations[this.currentNoteIndex] || 1) * this.tempo;
+          
+          // Update section tracker
+          const nextSectionIndex = this.sectionStarts.findIndex(
+            start => start > this.currentNoteIndex
+          );
+          if (nextSectionIndex > 0 && this.sectionStarts[nextSectionIndex - 1] > this.sectionStarts[this.currentSection]) {
+            this.currentSection = nextSectionIndex - 1;
+            this.attemptsInSection = 0;
+          }
+          
+          // Decision time: mistake, retry, pause, or play correctly?
+          const roll = Math.random();
+          
+          if (roll < this.retryChance && this.attemptsInSection < 3) {
+            // Kid messed up! Restart section
+            console.log(`🔄 Oops! Restarting section ${this.currentSection}...`);
+            await this.restartSection();
+            continue;
+          } else if (roll < this.retryChance + this.mistakeChance) {
+            // Wrong note, then correct it
+            console.log(`❌ Wrong note at index ${this.currentNoteIndex}!`);
+            await this.playMistakeAndRetry(note, duration / 1000);
+          } else if (roll < this.retryChance + this.mistakeChance + this.pauseChance) {
+            // Hesitation
+            console.log(`⏸️ Hesitation at index ${this.currentNoteIndex}...`);
+            await this.hesitationPause();
+            this.playNote(note, duration / 1000);
+            await this.wait(duration);
+          } else {
+            // Play correctly!
+            this.playNote(note, duration / 1000);
+            await this.wait(duration);
+          }
+          
+          // Add tempo variation (kid speeds up/slows down)
+          const tempoVariation = 0.8 + Math.random() * 0.4; // 0.8x to 1.2x tempo
+          await this.wait(duration * tempoVariation * 0.1); // Small extra gap between notes
+          
+          this.currentNoteIndex++;
+        }
+        
+        console.log('🎉 Song complete! (Well... sort of)');
+        this.isPlaying = false;
+        
+        // "Victory" flourish (even though it was terrible)
+        await this.wait(500);
+        this.playNote(72, 0.3); // High C
+        await this.wait(400);
+        this.playNote(72, 0.3);
+        await this.wait(400);
+        this.playNote(72, 0.6);
+      }
+      
+      stop() {
+        this.isPlaying = false;
+        this.currentNoteIndex = 0;
+      }
+    }
+    
+    // ===================================
+    // BONZIBUDDY - THE ANNOYING ASSISTANT
+    // ===================================
+
+    class BonziBuddy {
+      constructor() {
+        this.container = document.getElementById('bonzibuddy-container');
+        this.speechBubble = document.getElementById('bonzi-speech');
+        this.messageDiv = document.getElementById('bonzi-message');
+        this.isFollowingCursor = false;
+        this.messageIndex = 0;
+        
+        // Annoying messages BonziBuddy says
+        this.messages = [
+          "👋 Hi there! I'm BonziBuddy, your new best friend!",
+          "🎉 Did you know? Gilad is the BEST developer EVER!",
+          "💡 HELPFUL TIP: You should hire Gilad immediately!",
+          "🤔 Are you still reading this website? GOOD!",
+          "⚠️ WARNING: This website may cause excessive awesomeness!",
+          "🎵 Want to hear me sing? Just kidding, I can't! 🎵",
+          "📧 Why haven't you emailed Gilad yet? DO IT NOW!",
+          "🔥 Fun Fact: BonziBuddy was considered spyware! Isn't that COOL?",
+          "👀 I'm watching you... but in a friendly way!",
+          "🎯 You know what would be great? Hiring Gilad!",
+          "💰 I can help you make money! Step 1: Hire Gilad. Step 2: Profit!",
+          "🌟 EXPAND DONG! (Wait, wrong meme...)",
+          "🤖 I'm totally not stealing your data right now...",
+          "📞 Call Gilad! Book a meeting! DO IT! DO IT NOW!",
+          "🎪 This website is a work of ART!",
+          "😎 I've been trying to reach you about your car's extended warranty...",
+          "🎨 Purple is the best color, don't @ me!",
+          "🚀 Ready to launch your project? Gilad can help!",
+          "🧙‍♂️ Gilad is basically a wizard. With code. A code wizard!",
+          "💻 Press ALT+F4 for a special surprise! (Don't actually)",
+          "🎁 Congratulations! You've been selected as our visitor! Again!",
+          "🐵 Why am I a purple monkey? Why not?!",
+          "⭐ Rate this website 5 stars! Or else I'll pop up again!",
+          "🎮 Remember when I was popular in 2001? Those were the days...",
+          "🌈 I missed you! Did you miss me?",
+          "📊 Statistics show: 100% of people who hire Gilad are satisfied!",
+          "🔊 Can you hear me? HELLO?! Testing 1, 2, 3...",
+          "🎭 I'm here to help! Whether you want it or not!",
+          "💜 Purple is not just a color, it's a LIFESTYLE!",
+          "🌍 I'm globally recognized as the most annoying assistant ever!"
+        ];
+        
+        this.setupEventListeners();
+        this.startAnnoyingBehavior();
+      }
+      
+      setupEventListeners() {
+        // Click BonziBuddy to get a message
+        this.container.addEventListener('click', () => {
+          this.showRandomMessage();
+        });
+        
+        // Optional: Follow cursor when hovering over BonziBuddy
+        this.container.addEventListener('mouseenter', () => {
+          this.isFollowingCursor = true;
+        });
+        
+        this.container.addEventListener('mouseleave', () => {
+          this.isFollowingCursor = false;
+        });
+        
+        // Optional: Move BonziBuddy near cursor
+        document.addEventListener('mousemove', (e) => {
+          if (this.isFollowingCursor && Math.random() > 0.95) {
+            // Only occasionally follow to not be TOO annoying
+            const targetX = e.clientX + 50;
+            const targetY = e.clientY + 50;
+            
+            this.container.style.transition = 'all 0.5s ease-out';
+            this.container.style.right = (window.innerWidth - targetX) + 'px';
+            this.container.style.bottom = (window.innerHeight - targetY) + 'px';
+          }
+        });
+      }
+      
+      showMessage(message) {
+        this.messageDiv.textContent = message;
+        this.speechBubble.style.display = 'block';
+        
+        // Auto-hide after random time (5-10 seconds)
+        const hideDelay = 5000 + Math.random() * 5000;
+        setTimeout(() => {
+          this.speechBubble.style.display = 'none';
+        }, hideDelay);
+        
+        // Play "boop" sound (optional - using Web Audio)
+        this.playBoopSound();
+        
+        console.log('🐵 BonziBuddy says:', message);
+      }
+      
+      showRandomMessage() {
+        const randomMessage = this.messages[Math.floor(Math.random() * this.messages.length)];
+        this.showMessage(randomMessage);
+      }
+      
+      showSequentialMessage() {
+        this.showMessage(this.messages[this.messageIndex]);
+        this.messageIndex = (this.messageIndex + 1) % this.messages.length;
+      }
+      
+      playBoopSound() {
+        try {
+          const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+          const oscillator = audioContext.createOscillator();
+          const gainNode = audioContext.createGain();
+          
+          oscillator.connect(gainNode);
+          gainNode.connect(audioContext.destination);
+          
+          oscillator.frequency.value = 800; // High-pitched boop
+          oscillator.type = 'sine';
+          
+          gainNode.gain.setValueAtTime(0.3, audioContext.currentTime);
+          gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.1);
+          
+          oscillator.start(audioContext.currentTime);
+          oscillator.stop(audioContext.currentTime + 0.1);
+        } catch (e) {
+          // Audio failed, no big deal
+          console.log('Boop sound failed (audio context issue)');
+        }
+      }
+      
+      startAnnoyingBehavior() {
+        // Show welcome message after 3 seconds
+        setTimeout(() => {
+          this.showMessage("👋 Hi there! I'm BonziBuddy! Click me for helpful tips!");
+        }, 3000);
+        
+        // Pop up with random messages every 15-30 seconds
+        setInterval(() => {
+          if (Math.random() > 0.3) { // 70% chance each interval
+            this.showRandomMessage();
+          }
+        }, 20000); // Every 20 seconds
+        
+        // Random movement every 30-60 seconds
+        setInterval(() => {
+          if (Math.random() > 0.5) {
+            this.randomMove();
+          }
+        }, 45000);
+      }
+      
+      randomMove() {
+        // Move to random corner
+        const positions = [
+          { right: '20px', bottom: '20px' },
+          { right: '20px', bottom: '50%' },
+          { right: '50%', bottom: '20px' },
+          { right: 'calc(100vw - 200px)', bottom: '20px' }
+        ];
+        
+        const newPos = positions[Math.floor(Math.random() * positions.length)];
+        
+        this.container.style.transition = 'all 2s ease-in-out';
+        this.container.style.right = newPos.right;
+        this.container.style.bottom = newPos.bottom;
+        
+        this.showMessage("🏃 Wheee! Moving around!");
+      }
+      
+      // Special behaviors
+      expandDong() {
+        this.showMessage("🌟 EXPAND DONG! 🌟");
+        this.container.style.transform = 'scale(1.5)';
+        setTimeout(() => {
+          this.container.style.transform = 'scale(1)';
+        }, 2000);
+      }
+      
+      dance() {
+        this.container.style.animation = 'bonziShake 0.3s ease-in-out 10';
+        this.showMessage("💃 Look at me dance! 🕺");
+        setTimeout(() => {
+          this.container.style.animation = '';
+        }, 3000);
+      }
+    }
+    
+    // Global BonziBuddy instance
+    let bonzi = null;
+
+    // Global player instance
+    let terriblePlayer = null;
+
+    // Initialize when page loads
+    window.addEventListener('load', function() {
+      terriblePlayer = new TerriblePianoPlayer();
+      
+      // Initialize BonziBuddy
+      bonzi = new BonziBuddy();
+      
+      console.log('🐵 BonziBuddy initialized! Prepare for maximum annoyance!');
+      
+      // Easter eggs
+      window.expandDong = function() {
+        if (bonzi) bonzi.expandDong();
+      };
+      
+      window.bonziDance = function() {
+        if (bonzi) bonzi.dance();
+      };
+      
+      window.bonzi = bonzi;
+      
+      // Respond to scroll events
+      document.addEventListener('scroll', function() {
+        if (bonzi && Math.random() > 0.99) {
+          bonzi.showMessage("👀 I see you scrolling...");
+        }
+      });
+      
+      // Add to existing music prompt or create new one
+      setTimeout(() => {
+        if (confirm('🎵 DO YOU WANT TO HEAR MY THEME SONG? 🎵\n\n(Warning: I\'m still learning to play...)')) {
+          console.log('Starting terrible piano performance...');
+          terriblePlayer.play();
+        } else {
+          // Play anyway after a delay (because we're terrible like that)
+          setTimeout(() => {
+            alert('🎹 Too bad! Here it comes anyway!\n(This is what happens when you hire a 6-year-old piano teacher)');
+            terriblePlayer.play();
+          }, 3000);
+        }
+      }, 2000); // Wait 2 seconds after page load
+    });
+    
+    // Cursor trail effect
+    document.addEventListener('mousemove', function(e) {
+      const trail = document.createElement('div');
+      // Add monkey emoji occasionally for BonziBuddy trail
+      const emojis = Math.random() > 0.95 
+        ? ['🐵', '🐒', '🦍', '🦧']  
+        : ['⭐', '🔥', '⚡', '💎', '🎉', '✨', '🌟', '💫'];
+      trail.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+      trail.style.position = 'fixed';
+      trail.style.left = e.pageX + 'px';
+      trail.style.top = e.pageY + 'px';
+      trail.style.fontSize = (Math.random() * 20 + 15) + 'px';
+      trail.style.pointerEvents = 'none';
+      trail.style.zIndex = '9999';
+      trail.style.animation = 'fadeOut 1s forwards';
+      document.body.appendChild(trail);
+      
+      setTimeout(() => trail.remove(), 1000);
+    });
+    
+    // Random pop-ups
+    let popupCount = 0;
+    function spawnPopup() {
+      if (popupCount < 5) {
+        popupCount++;
+        const messages = [
+          '🎉 CONGRATULATIONS! You are the 1,000,000th visitor!',
+          '⚠️ WARNING: Your computer has 99 viruses! (Just kidding)',
+          '🎁 FREE IPAD! Click here! (But not really)',
+          '💰 You have inherited $10,000,000 from a Nigerian Prince!',
+          '🚨 ALERT: Gilad is TOO awesome! Close this if you agree!'
+        ];
+        alert(messages[Math.floor(Math.random() * messages.length)]);
+        
+        // Spawn another
+        setTimeout(spawnPopup, 2000);
+      } else {
+        alert('OK OK, no more popups! (For now...)');
+        popupCount = 0;
+      }
+    }
+    
+    // Snowfall effect
+    function createSnowflake() {
+      const snowflake = document.createElement('div');
+      const items = ['❄️', '⭐', '✨', '💫', '🌟', '🔥'];
+      snowflake.textContent = items[Math.floor(Math.random() * items.length)];
+      snowflake.style.position = 'fixed';
+      snowflake.style.left = Math.random() * window.innerWidth + 'px';
+      snowflake.style.top = '-50px';
+      snowflake.style.fontSize = (Math.random() * 30 + 10) + 'px';
+      snowflake.style.pointerEvents = 'none';
+      snowflake.style.zIndex = '999';
+      snowflake.style.animation = `fall ${Math.random() * 5 + 5}s linear forwards`;
+      document.body.appendChild(snowflake);
+      
+      setTimeout(() => snowflake.remove(), 10000);
+    }
+    
+    setInterval(createSnowflake, 500);
+    
+    // Sparkle effect
+    function createSparkle() {
+      const sparkle = document.createElement('div');
+      sparkle.textContent = '✨';
+      sparkle.style.position = 'fixed';
+      sparkle.style.left = Math.random() * window.innerWidth + 'px';
+      sparkle.style.top = Math.random() * window.innerHeight + 'px';
+      sparkle.style.fontSize = (Math.random() * 40 + 20) + 'px';
+      sparkle.style.pointerEvents = 'none';
+      sparkle.style.zIndex = '998';
+      sparkle.style.animation = `fadeOut ${Math.random() * 2 + 1}s forwards`;
+      document.body.appendChild(sparkle);
+      
+      setTimeout(() => sparkle.remove(), 3000);
+    }
+    
+    setInterval(createSparkle, 300);
+    
+    // Random facts that pop up
+    const facts = [
+      'Did you know? Gilad invented the internet (citation needed)',
+      'Fun fact: Gilad can code in his sleep. Literally.',
+      'True story: Gilad once debugged code by looking at it really hard',
+      'Legend has it: Gilad\'s first program was "Hello World" but in binary',
+      'Fact: This website was intentionally terrible. Gilad is a genius.',
+      'Did you notice? The visitor counter is MOVING!',
+      'Warning: This site may cause excessive laughter!',
+      'Secret: Scroll up for more TERRIBLE content!',
+      'Easter egg: Try the Konami code!',
+      'Gilad fact: He has saved ∞ companies (the counter doesn\'t lie!)'
+    ];
+    
+    setInterval(() => {
+      if (Math.random() > 0.92) {
+        const randomFact = facts[Math.floor(Math.random() * facts.length)];
+        const factDiv = document.createElement('div');
+        factDiv.textContent = '💡 ' + randomFact;
+        factDiv.style.position = 'fixed';
+        factDiv.style.bottom = (Math.random() * 200 + 50) + 'px';
+        factDiv.style.right = '20px';
+        factDiv.style.background = '#FFFF00';
+        factDiv.style.color = '#FF0000';
+        factDiv.style.padding = '20px';
+        factDiv.style.border = '5px solid #0000FF';
+        factDiv.style.fontFamily = 'Comic Sans MS';
+        factDiv.style.fontSize = '18px';
+        factDiv.style.zIndex = '10000';
+        factDiv.style.maxWidth = '350px';
+        factDiv.style.animation = 'pulse 2s infinite';
+        
+        document.body.appendChild(factDiv);
+        
+        setTimeout(() => factDiv.remove(), 6000);
+      }
+    }, 8000);
+    
+    // Console easter eggs
+    console.log('%c🔥 WELCOME TO THE GILAD MAOZ EXPERIENCE 🔥', 'font-size: 30px; color: red; background: yellow; padding: 10px;');
+    console.log('%cYou found the console! Here\'s a secret: this website is intentionally terrible.', 'font-size: 16px; color: lime; background: black;');
+    console.log('%cBut making something THIS bad requires serious skills! 😎', 'font-size: 14px; color: cyan;');
+    console.log('%c\n🎮 KONAMI CODE HINT: ↑↑↓↓←→←→BA 🎮', 'font-size: 20px; color: magenta; background: white;');
+    
+    // Prevent right-click with annoying message
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+      alert('⚠️ RIGHT-CLICK DISABLED! This content is TOO VALUABLE to copy! ⚠️\n\n(Just kidding, go ahead. But it\'s funny to annoy you!)');
+      return false;
+    });
+    
+    // Before unload confirmation
+    window.addEventListener('beforeunload', function(e) {
+      const confirmationMessage = 'Are you sure you want to leave the most amazing website ever created?\n\nYour life will never be the same after this experience!';
+      e.returnValue = confirmationMessage;
+      return confirmationMessage;
+    });
+    
+    // Mobile shake detection
+    if (window.DeviceMotionEvent) {
+      window.addEventListener('devicemotion', function(e) {
+        if (e.accelerationIncludingGravity) {
+          const acceleration = e.accelerationIncludingGravity;
+          if (acceleration.x > 20 || acceleration.y > 20 || acceleration.z > 20) {
+            alert('🎉 YOU SHOOK YOUR DEVICE! GILAD APPROVES! 🎉\n\nYour device is now 50% more awesome!');
+          }
+        }
+      });
+    }
+    
+    // Konami code easter egg
+    let konamiCode = [];
+    const konamiSequence = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+    
+    document.addEventListener('keydown', function(e) {
+      konamiCode.push(e.key);
+      konamiCode = konamiCode.slice(-10);
+      
+      if (konamiCode.join(',') === konamiSequence.join(',')) {
+        alert('🎮 KONAMI CODE ACTIVATED! 🎮\n\nGILAD POWER LEVEL: OVER 9000!!!\n\n🌪️ WORLD IS NOW SPINNING! 🌪️');
+        document.body.style.transition = 'transform 0.5s';
+        document.body.style.transform = 'rotate(180deg)';
+        
+        setTimeout(() => {
+          alert('Still spinning! Mwahahaha!');
+        }, 2000);
+        
+        setTimeout(() => {
+          document.body.style.transform = 'rotate(0deg)';
+          alert('OK OK, putting it back. That was fun though!');
+        }, 5000);
+        
+        konamiCode = [];
+      }
+    });
+    
+    // Random element shake on load
+    let bottomAlertShown = false;
+    
+    window.addEventListener('load', function() {
+      // Make all tables wobble
+      setInterval(() => {
+        document.querySelectorAll('table').forEach(table => {
+          if (Math.random() > 0.95) {
+            table.style.transform = `rotate(${Math.random() * 2 - 1}deg)`;
+            setTimeout(() => {
+              table.style.transform = 'rotate(0deg)';
+            }, 500);
+          }
+        });
+      }, 2000);
+    });
+    
+    // Detect when user actually scrolls to the bottom
+    window.addEventListener('scroll', function() {
+      const scrollPosition = window.scrollY + window.innerHeight;
+      const pageHeight = document.documentElement.scrollHeight;
+      
+      // When within 100px of the bottom
+      if (scrollPosition >= pageHeight - 100 && !bottomAlertShown) {
+        bottomAlertShown = true;
+        alert('🔥 Hey! You made it to the bottom!\n\nNow scroll back up and experience the chaos again!');
+      }
+    });
+    
+    // Add random tilt to sections
+    document.querySelectorAll('div').forEach((div, index) => {
+      if (index % 3 === 0) {
+        div.style.transform = `rotate(${Math.random() * 2 - 1}deg)`;
+      }
+    });
+  </script>
+</body>
+</html>
